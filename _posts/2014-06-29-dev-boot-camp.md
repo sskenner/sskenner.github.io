@@ -1,6 +1,6 @@
 ---
 layout: post
-title: dbc = da ish*
+title: dev bootcamp = da ish*
 ---
 
 {{ page.title }}

@@ -1,9 +1,10 @@
 ---
 layout: post
-title: mark it up with markdown*
+title: markup with markdown*
 ---
 
-## {{ page.title }}
+{{ page.title }}
+================
 
 <p class="meta">31 jan 2014</p>
 
@@ -14,7 +15,18 @@ title: mark it up with markdown*
 Here is a link to a very helpful interactive tutorial regarding: 
 [markdown interactive tut](http://markdowntutorial.com/)
 
-`::: markdown cheatsheet :::`  
+`::: my markdown cheatsheet :::`   _as per Adam Pritchards_ [Markdown Cheatsheet](https://github.com/adam-p/markdown-here/wiki/Markdown-Cheatsheet)
+
+* **Headers**
+  * hashtags style  
+    `# H1` - _largest_  
+    `## H2`  
+    `### H3`  
+    `#### H4`  
+    `##### H5`  
+    `###### H6` - _smallest_  
+<!-- why no blank line -->
+<!-- START HERE!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!! -->
 
 * **Emphasis**
   * Emphasis, aka _italics_: `*asterisks*` or `_underscores_`
@@ -32,6 +44,7 @@ Here is a link to a very helpful interactive tutorial regarding:
   `[1]: www.somesite.com`
 
 [1]: http://daringfireball.net/projects/markdown/syntax#link 
+<!-- why no blank line -->
 
 * **Images**
   * inline image:  
