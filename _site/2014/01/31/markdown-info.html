@@ -48,7 +48,7 @@ var WRInitTime=(new Date()).getTime();
 <ul>
   <li><strong>Headers</strong>
     <ul>
-      <li>hashtags style<br />
+      <li>Hashtags style<br />
 <code># H1</code> - <em>largest</em><br />
 <code>## H2</code><br />
 <code>### H3</code><br />
@@ -66,29 +66,60 @@ var WRInitTime=(new Date()).getTime();
       <li>Combined emphasis with <strong><em>asterisks</em> and <em>underscores</em></strong>: <code>**_asterisks_ and _underscores_**</code></li>
     </ul>
   </li>
-  <li>
-    <p><strong>Lists</strong><br />
-WYSIWYG plus spaces and blank lines</p>
+  <li><strong>Lists</strong><br />
+    <ul>
+      <li>Ordered<br />
+WYSIWYG plus trailing spaces and blank lines</li>
+    </ul>
+
+    <p><code>1. First ordered list item</code><br />
+<code>2. Another item</code><br />
+<code>__* Unordered sub-list.</code><br />
+<code>1. Any number will do</code>  <br />
+<code>__1. Ordered sub-list</code><br />
+<code>4. And another item.</code></p>
+
+    <ul>
+      <li>Unordered<br />
+<code>*</code> asterisks, <code>-</code> minuses &amp; <code>+</code> pluses</li>
+    </ul>
   </li>
   <li><strong>Links</strong>
     <ul>
-      <li><a href="http://daringfireball.net/projects/markdown/syntax#link">inline link</a>: <code>[inline link](www.somesite.com)</code></li>
-      <li><a href="http://daringfireball.net/projects/markdown/syntax#link">reference link</a>:<br />
-<code>[reference link]\[1]</code><br />
-<code>\n</code><br />
-<code>[1]: www.somesite.com</code></li>
+      <li><a href="http://sskenner.github.io">an inline-style link</a><br />
+<code>[an inline-style link]( 
+http://sskenner.github.io)</code></li>
+      <li>
+        <p><a href="https://www.google.com" title="Google's Homepage">an inline-style link with title</a><br />
+<code>[an inline-style link with title](https://www.google.com "Google's Homepage")</code></p>
+      </li>
+      <li>[a reference-style link][Arbitrary case-insensitive reference text]<br />
+<code>[a reference-style link][Arbitrary case-insensitive reference text]</code>
+&lt;!– why doesnt the relative reference work?</li>
+      <li><a href="../blob/master/_posts/2014-01-14-unix-fu.md">a relative reference to a repository file</a><br />
+<code>[a relative reference to a repository file](../blob/master/_posts/2014-01-14-unix-fu.md)</code>
+–&gt;</li>
+      <li>
+        <p>[can use numbers for reference-style link definitions][1]<br />
+<code>[can use numbers for reference-style link definitions][1]</code></p>
+      </li>
+      <li>
+        <p>Or leave it empty and use the [link text itself]<br />
+<code>Or leave it empty and use the [link text itself]</code></p>
+      </li>
+      <li>text to show that the reference links can follow later:  <br />
+[1]:http://daringfireball.net/projects/markdown/syntax#link<br />
+<code>[1]: http://daringfireball.net/projects/markdown/syntax#link</code></li>
     </ul>
   </li>
-</ul>
+  <li>
+    <p><strong>Images</strong>  </p>
 
-<!-- why no blank line -->
-
-<ul>
-  <li><strong>Images</strong>
     <ul>
       <li>
-        <p>inline image:<br />
-<code>![an inline images alt text](http://image.URL.com/image-name.jpg)</code>  </p>
+        <p>inline image:  (<em>hover over image to see title text</em>)<br />
+<code>![an inline images alt text](http://image.URL.com/image-name.jpg)</code><br />
+<img src="http://worldsoforos.com/secondviews/wp-content/uploads/2008/04/The-Matrix-Logo-150x150.gif" alt="alt text" title="maxtrix code map" />  </p>
       </li>
       <li>
         <p>reference image:<br />
@@ -99,8 +130,6 @@ WYSIWYG plus spaces and blank lines</p>
     </ul>
   </li>
 </ul>
-
-<p><img src="http://www.freenew.net/upload/pscreen/55/world-of-matrix-animated-wallpaper-100.jpg" alt="world of maxtrix code" /></p>
 
 <!-- -->
 <!-- notes: -->
@@ -130,9 +159,9 @@ WYSIWYG plus spaces and blank lines</p>
     
       <li><span>29 Jun 2014</span> &raquo; <a href="/2014/06/29/dev-boot-camp.html">dev bootcamp = da ish*</a></li>
     
-      <li><span>14 Jan 2014</span> &raquo; <a href="/2014/01/14/unix-fu.html">unix fu et al*</a></li>
+      <li><span>14 Jan 2014</span> &raquo; <a href="/2014/01/14/unix-fu.html">unix fu et al</a></li>
     
-      <li><span>11 Jan 2014</span> &raquo; <a href="/2014/01/11/strapped.html">strapped up</a></li>
+      <li><span>11 Jan 2014</span> &raquo; <a href="/2014/01/11/strapped.html">strapped, locked, loaded</a></li>
     
   </ul>
 </div>

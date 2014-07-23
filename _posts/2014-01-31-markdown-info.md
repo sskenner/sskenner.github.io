@@ -18,7 +18,7 @@ Here is a link to a very helpful interactive tutorial regarding:
 `::: my markdown cheatsheet :::`   _as per Adam Pritchards_ [Markdown Cheatsheet](https://github.com/adam-p/markdown-here/wiki/Markdown-Cheatsheet)
 
 * **Headers**
-  * hashtags style  
+  * Hashtags style  
     `# H1` - _largest_  
     `## H2`  
     `### H3`  
@@ -34,30 +34,52 @@ Here is a link to a very helpful interactive tutorial regarding:
   * Combined emphasis with **_asterisks_ and _underscores_**: `**_asterisks_ and _underscores_**`
 
 * **Lists**  
-  WYSIWYG plus spaces and blank lines
+  * Ordered  
+  WYSIWYG plus trailing spaces and blank lines
+  
+  `1. First ordered list item`  
+  `2. Another item`  
+  `__* Unordered sub-list.`  
+  `1. Any number will do`    
+  `__1. Ordered sub-list`  
+  `4. And another item.`
+  
+  * Unordered  
+  `*` asterisks, `-` minuses & `+` pluses
 
 * **Links**
-  * [inline link](http://daringfireball.net/projects/markdown/syntax#link): `[inline link](www.somesite.com)`
-  * [reference link][1]:  
-  `[reference link]\[1]`  
-  `\n`  
-  `[1]: www.somesite.com`
+  * [an inline-style link]( 
+http://sskenner.github.io)  
+  `[an inline-style link]( 
+http://sskenner.github.io)`
+  * [an inline-style link with title](https://www.google.com "Google's Homepage")  
+  `[an inline-style link with title](https://www.google.com "Google's Homepage")`
 
-[1]: http://daringfireball.net/projects/markdown/syntax#link 
-<!-- why no blank line -->
+  * [a reference-style link][Arbitrary case-insensitive reference text]  
+  `[a reference-style link][Arbitrary case-insensitive reference text]`
+<!-- why doesnt the relative reference work?
+  * [a relative reference to a repository file](../blob/master/_posts/2014-01-14-unix-fu.md)  
+  `[a relative reference to a repository file](../blob/master/_posts/2014-01-14-unix-fu.md)`
+-->
+  * [can use numbers for reference-style link definitions][1]  
+  `[can use numbers for reference-style link definitions][1]`
 
-* **Images**
-  * inline image:  
+  * Or leave it empty and use the [link text itself]  
+  `Or leave it empty and use the [link text itself]`
+
+  * text to show that the reference links can follow later:    
+[1]:http://daringfireball.net/projects/markdown/syntax#link  
+`[1]: http://daringfireball.net/projects/markdown/syntax#link`
+* **Images**  
+   
+  * inline image:  (_hover over image to see title text_)  
   `![an inline images alt text](http://image.URL.com/image-name.jpg)`  
-  
+  ![alt text](http://worldsoforos.com/secondviews/wp-content/uploads/2008/04/The-Matrix-Logo-150x150.gif "maxtrix code map")  
+
   * reference image:  
   `![a reference images alt text][2]`  
   `\n`  
   `[2]: http://image.URL.com/image-name.jpg`
-
-![world of maxtrix code](http://www.freenew.net/upload/pscreen/55/world-of-matrix-animated-wallpaper-100.jpg)
-
-
 
 <!-- -->
 <!-- notes: -->
