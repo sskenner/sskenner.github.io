@@ -7,6 +7,7 @@
   <!-- <link rel="stylesheet" href="/stylesheets/stylesheet.css" type="text/css" media="screen" /> -->
   <link rel="stylesheet" href="/stylesheets/print.css" type="text/css" media="print" />
   <link rel="stylesheet" href="/css/screen.css" type="text/css" media="screen, projection" />
+  <link  rel="stylesheet" href="/css/syntax.css">
   
   <title>markup with markdown*</title>
   <meta name="author" content="c2" />
@@ -45,8 +46,12 @@ var WRInitTime=(new Date()).getTime();
 
 <p><code>::: my markdown cheatsheet :::</code>   <em>as per Adam Pritchards</em> <a href="https://github.com/adam-p/markdown-here/wiki/Markdown-Cheatsheet">Markdown Cheatsheet</a></p>
 
+<!-- why dont headers work? -->
+
 <ul>
-  <li><strong>Headers</strong>
+  <li>
+    <p><strong>Headers</strong></p>
+
     <ul>
       <li>Hashtags style<br />
 <code># H1</code> - <em>largest</em><br />
@@ -54,67 +59,95 @@ var WRInitTime=(new Date()).getTime();
 <code>### H3</code><br />
 <code>#### H4</code><br />
 <code>##### H5</code><br />
-<code>###### H6</code> - <em>smallest</em><br />
-<!-- why no blank line -->
-<!-- START HERE!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!! --></li>
-    </ul>
-  </li>
-  <li><strong>Emphasis</strong>
-    <ul>
-      <li>Emphasis, aka <em>italics</em>: <code>*asterisks*</code> or <code>_underscores_</code></li>
-      <li>Strong emphasis, aka <strong>bold</strong>: <code>**asterisks**</code> or <code>__underscores__</code></li>
-      <li>Combined emphasis with <strong><em>asterisks</em> and <em>underscores</em></strong>: <code>**_asterisks_ and _underscores_**</code></li>
-    </ul>
-  </li>
-  <li><strong>Lists</strong><br />
-    <ul>
-      <li>Ordered<br />
-WYSIWYG plus trailing spaces and blank lines</li>
-    </ul>
-
-    <p><code>1. First ordered list item</code><br />
-<code>2. Another item</code><br />
-<code>__* Unordered sub-list.</code><br />
-<code>1. Any number will do</code>  <br />
-<code>__1. Ordered sub-list</code><br />
-<code>4. And another item.</code></p>
-
-    <ul>
-      <li>Unordered<br />
-<code>*</code> asterisks, <code>-</code> minuses &amp; <code>+</code> pluses</li>
-    </ul>
-  </li>
-  <li><strong>Links</strong>
-    <ul>
-      <li><a href="http://sskenner.github.io">an inline-style link</a><br />
-<code>[an inline-style link]( 
-http://sskenner.github.io)</code></li>
-      <li>
-        <p><a href="https://www.google.com" title="Google's Homepage">an inline-style link with title</a><br />
-<code>[an inline-style link with title](https://www.google.com "Google's Homepage")</code></p>
-      </li>
-      <li>[a reference-style link][Arbitrary case-insensitive reference text]<br />
-<code>[a reference-style link][Arbitrary case-insensitive reference text]</code>
-&lt;!– why doesnt the relative reference work?</li>
-      <li><a href="../blob/master/_posts/2014-01-14-unix-fu.md">a relative reference to a repository file</a><br />
-<code>[a relative reference to a repository file](../blob/master/_posts/2014-01-14-unix-fu.md)</code>
-–&gt;</li>
-      <li>
-        <p>[can use numbers for reference-style link definitions][1]<br />
-<code>[can use numbers for reference-style link definitions][1]</code></p>
-      </li>
-      <li>
-        <p>Or leave it empty and use the [link text itself]<br />
-<code>Or leave it empty and use the [link text itself]</code></p>
-      </li>
-      <li>text to show that the reference links can follow later:  <br />
-[1]:http://daringfireball.net/projects/markdown/syntax#link<br />
-<code>[1]: http://daringfireball.net/projects/markdown/syntax#link</code></li>
+<code>###### H6</code> - <em>smallest</em>    </li>
     </ul>
   </li>
   <li>
-    <p><strong>Images</strong>  </p>
+    <p><strong>Emphasis</strong></p>
 
+    <ul>
+      <li>Emphasis, aka <em>italics</em>: <code>*asterisks*</code> or <code>_underscores_</code></li>
+      <li>Strong emphasis, aka <strong>bold</strong>: <code>**asterisks**</code> or <code>__underscores__</code></li>
+      <li>Combined emphasis with <strong><em>asterisks</em> and <em>underscores</em></strong>:<br />
+<code>**_asterisks_ and _underscores_**</code></li>
+    </ul>
+  </li>
+  <li>
+    <p><strong>Lists</strong></p>
+
+    <ul>
+      <li>
+        <p>Ordered<br />
+WYSIWYG<br />
+<code>1. First ordered list item</code><br />
+<code>2. Another item</code><br />
+<code>--* Unordered sub-list.</code><br />
+<code>1. Any number will do</code>  <br />
+<code>--1. Ordered sub-list</code><br />
+<code>4. And another item.</code></p>
+      </li>
+      <li>
+        <p>Unordered<br />
+<code>*</code> asterisks, <code>-</code> minuses &amp; <code>+</code> pluses  </p>
+      </li>
+    </ul>
+
+    <ol>
+      <li>First ordered list item</li>
+      <li>Another item
+        <ul>
+          <li>Unordered sub-list.</li>
+        </ul>
+      </li>
+      <li>Actual numbers don't matter, just that it's a number</li>
+      <li>Ordered sub-list</li>
+      <li>And another item.</li>
+    </ol>
+
+    <p>Some text that should be aligned with the above item.</p>
+
+    <ul>
+      <li>Unordered list can use asterisks</li>
+      <li>Or minuses</li>
+      <li>Or pluses</li>
+    </ul>
+  </li>
+  <li>
+    <p><strong>Links</strong></p>
+
+    <ul>
+      <li>
+        <p><a href="http://sskenner.github.io">an inline-style link</a><br />
+<code>[an inline-style link](http://sskenner.github.io)</code></p>
+      </li>
+      <li>
+        <p><a href="https://www.google.com" title="Homepage">an inline-style link with title</a><br />
+<code>[an inline-style link with title](https://www.google.com "Homepage")</code></p>
+      </li>
+      <li>
+        <p><a href="https://google.com">a reference-style link</a><br />
+<code>[a reference-style link][Arbitrary case-insensitive reference text]</code><br />
+<code>[Arbitrary case-insensitive reference text]: https://google.com</code>  </p>
+      </li>
+      <li>
+        <p><a href="http://daringfireball.net/projects/markdown/syntax#link">can use numbers for reference-style link definitions</a><br />
+<code>[can use numbers for reference-style link definitions][1]</code></p>
+      </li>
+      <li>
+        <p>Or leave it empty and use the <a href="http://daringfireball.net/">link text itself</a><br />
+<code>[link text itself]</code><br />
+<code>[link text itself]: http://daringfireball.net/</code>  </p>
+      </li>
+      <li>
+        <p>text to show that the reference links can follow anywhere after reference-style number link<br />
+<code>[1]: http://daringfireball.net/projects/markdown/syntax#link</code>  </p>
+      </li>
+    </ul>
+  </li>
+</ul>
+
+<ul>
+  <li><strong>Images</strong>
     <ul>
       <li>
         <p>inline image:  (<em>hover over image to see title text</em>)<br />
@@ -129,27 +162,59 @@ http://sskenner.github.io)</code></li>
       </li>
     </ul>
   </li>
+  <li><strong>Code and Syntax Highlighting</strong>  <br />
+    <ul>
+      <li>
+        <p>Code  <br />
+Inline <code>code</code> has <code>back-ticks around</code> it.<br />
+<code>Inline `code` has `back-ticks` around it.</code></p>
+      </li>
+      <li>
+        <p>Syntax Highlighting
+<!-- why doesnt pretty line nums work? --></p>
+      </li>
+    </ul>
+  </li>
 </ul>
+
+<!-- START AQUIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIII -->
+<!-- START AQUIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIII -->
+
+<p>{/\% highlight ruby linenos /\%}</p>
+
+<div class="highlight"><pre><code class="ruby"><span class="lineno"> 1</span> <span class="nb">require</span> <span class="s1">&#39;redcarpet&#39;</span>
+<span class="lineno"> 2</span> <span class="n">markdown</span> <span class="o">=</span> <span class="no">Redcarpet</span><span class="o">.</span><span class="n">new</span><span class="p">(</span><span class="s2">&quot;Hello World!&quot;</span><span class="p">)</span>
+<span class="lineno"> 3</span> <span class="nb">puts</span> <span class="n">markdown</span><span class="o">.</span><span class="n">to_html</span>
+<span class="lineno"> 4</span> 
+<span class="lineno"> 5</span> <span class="k">def</span> <span class="nf">show</span>
+<span class="lineno"> 6</span>   <span class="nb">puts</span> <span class="s2">&quot;Outputting a very lo-o-o-o-o-o-o-o-o-o-o-o-o-o-o-o-ong lo-o-o-o-o-o-o-o-o-o-o-o-o-o-o-o-ong line&quot;</span>
+<span class="lineno"> 7</span>   <span class="vi">@widget</span> <span class="o">=</span> <span class="no">Widget</span><span class="p">(</span><span class="n">params</span><span class="o">[</span><span class="ss">:id</span><span class="o">]</span><span class="p">)</span>
+<span class="lineno"> 8</span>   <span class="n">respond_to</span> <span class="k">do</span> <span class="o">|</span><span class="nb">format</span><span class="o">|</span>
+<span class="lineno"> 9</span>     <span class="nb">format</span><span class="o">.</span><span class="n">html</span> <span class="c1"># show.html.erb</span>
+<span class="lineno">10</span>     <span class="nb">format</span><span class="o">.</span><span class="n">json</span> <span class="p">{</span> <span class="n">render</span> <span class="ss">json</span><span class="p">:</span> <span class="vi">@widget</span> <span class="p">}</span>
+<span class="lineno">11</span>   <span class="k">end</span>
+<span class="lineno">12</span> <span class="k">end</span></code></pre></div>
 
 <!-- -->
 <!-- notes: -->
 
-<!-- why dont headers work? -->
-
-<!-- how to put space before Imanges bullet and rmv after? -->
-
 <!-- why doesnt block quote example work? -->
 <!-- 
+* **Blockqoutes**
 > Lorizzle stuff fo shizzle sit dang, pot adipiscing fo shizzle. Fo shizzle sapizzle velit, owned volutpat, suscipizzle quis, gravida vizzle, arcu. Gangster izzle gangsta.
-```
 > Lorizzle stuff fo shizzle sit dang, pot adipiscing fo shizzle. Fo shizzle sapizzle velit, owned volutpat, suscipizzle quis, gravida vizzle, arcu. Gangster izzle gangsta.
-``` 
 -->
 
 <!-- why is it rendering w extra spaces? -->
 <!-- * Combined emphasis with **_asterisks_ and _underscores_**: `**_asterisks_ and _underscores_**` -->
 
 <!-- * Strikethrough with ~~two tildes~~: `~~two tildes~~` ?? -->
+
+<!--
+  why doesnt the relative reference work?
+  * [a relative reference to a repository file](../blob/master/_posts/2014-01-14-unix-fu.md)
+  `[a relative reference to a repository file](../blob/master/_posts/2014-01-14-unix-fu.md)`
+-->
 
 </div>
 
