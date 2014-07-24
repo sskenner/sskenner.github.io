@@ -9,7 +9,7 @@
   <link rel="stylesheet" href="/css/screen.css" type="text/css" media="screen, projection" />
   <link  rel="stylesheet" href="/css/syntax.css">
   
-  <title>markup with markdown*</title>
+  <title>markup jekyll with markdown*</title>
   <meta name="author" content="c2" />
   
   <meta name="readability-verification" content="QCzSs992GxmRYRKVpPeZ6LE2tS8aYKxsSSQKV8YM" />
@@ -33,18 +33,16 @@ var WRInitTime=(new Date()).getTime();
   </div>
   
   <div id="post">
-  <h1 id="markup-with-markdown">markup with markdown*</h1>
+  <h1 id="markup-jekyll-with-markdown">markup jekyll with markdown*</h1>
 
 <p class="meta">31 jan 2014</p>
 
-<p><code>::: markdown info :::</code></p>
+<p><code>::: my jekyll markdown cheatsheet :::</code>   <em>as per Adam Pritchards</em> <a href="https://github.com/adam-p/markdown-here/wiki/Markdown-Cheatsheet">Markdown Cheatsheet</a></p>
 
 <p><strong>Markdown</strong> is a way to write content for the web. It's written in what nerds like to call <em>plaintext</em>, which is exactly the sort of text we're used to writing and seeing.</p>
 
 <p>Here is a link to a very helpful interactive tutorial regarding: 
 <a href="http://markdowntutorial.com/">markdown interactive tut</a></p>
-
-<p><code>::: my markdown cheatsheet :::</code>   <em>as per Adam Pritchards</em> <a href="https://github.com/adam-p/markdown-here/wiki/Markdown-Cheatsheet">Markdown Cheatsheet</a></p>
 
 <!-- why dont headers work? -->
 
@@ -89,27 +87,27 @@ WYSIWYG<br />
       <li>
         <p>Unordered<br />
 <code>*</code> asterisks, <code>-</code> minuses &amp; <code>+</code> pluses  </p>
-      </li>
-    </ul>
 
-    <ol>
-      <li>First ordered list item</li>
-      <li>Another item
+        <ol>
+          <li>First ordered list item</li>
+          <li>Another item
+            <ul>
+              <li>Unordered sub-list.</li>
+            </ul>
+          </li>
+          <li>Any number will do</li>
+          <li>Ordered sub-list</li>
+          <li>And another item.</li>
+        </ol>
+
+        <p>Some text that should be aligned with the above item.</p>
+
         <ul>
-          <li>Unordered sub-list.</li>
+          <li>Unordered list can use asterisks</li>
+          <li>Or minuses</li>
+          <li>Or pluses</li>
         </ul>
       </li>
-      <li>Actual numbers don't matter, just that it's a number</li>
-      <li>Ordered sub-list</li>
-      <li>And another item.</li>
-    </ol>
-
-    <p>Some text that should be aligned with the above item.</p>
-
-    <ul>
-      <li>Unordered list can use asterisks</li>
-      <li>Or minuses</li>
-      <li>Or pluses</li>
     </ul>
   </li>
   <li>
@@ -164,30 +162,43 @@ WYSIWYG<br />
   </li>
   <li><strong>Code and Syntax Highlighting</strong>  <br />
     <ul>
-      <li>
-        <p>Code  <br />
+      <li>Code  <br />
 Inline <code>code</code> has <code>back-ticks around</code> it.<br />
-<code>Inline `code` has `back-ticks` around it.</code></p>
-      </li>
-      <li>
-        <p>Syntax Highlighting
-<!-- why doesnt pretty line nums work? --></p>
-      </li>
+<code>Inline `code` has `back-ticks` around it.</code></li>
     </ul>
   </li>
 </ul>
 
-<!-- START AQUIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIII -->
-<!-- START AQUIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIII -->
+<!-- START AQUIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIII-->
+<!-- START AQUIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIII-->
 
-<p>{/\% highlight ruby linenos /\%}</p>
+<ul>
+  <li>
+    <p><strong>Syntax Highlighting</strong></p>
+
+    <p><em>note</em>: code snippet hightlighting seems to be blogging platform specific. For Jekyll,as per <a href="https://github.com/demisx" title="demisx">Dmitri Moore's</a> blog post, entitled <a href="http://demisx.github.io/jekyll/2014/01/13/improve-code-highlighting-in-jekyll.html" title="Born-again Rubyist">Improve Code Highlighting in a Jekyll-based Blog Site</a>, an option would be <em>via addition of custom CSS rules</em>. Can be done using the following steps:</p>
+
+    <ul>
+      <li>Add <a href="https://github.com/mojombo/tpw/blob/master/css/syntax.css">syntax highlighter CSS file</a> as <code>css/syntax.css</code> to your Jekyll site  </li>
+      <li>
+        <p>Load CSS <code>&lt;link href="/css/syntax.css" rel="stylesheet"&gt;</code> inside of the corresponding layout file (e.g. _layouts/default.html) between the <code>&lt;head&gt;</code> tags<br />
+<!-- how to escape brackets --></p>
+      </li>
+      <li>Wrap code snippets in posts with <code>&lt;left brace&gt;% highlight ruby linenos %&lt;right brace&gt;...&lt;left brace&gt;% endhighlight %&lt;right brace&gt;</code> Liquid tags  </li>
+    </ul>
+
+    <p>yields:</p>
+  </li>
+</ul>
+
+<!-- why doesnt pretty line nums work? -->
 
 <div class="highlight"><pre><code class="ruby"><span class="lineno"> 1</span> <span class="nb">require</span> <span class="s1">&#39;redcarpet&#39;</span>
 <span class="lineno"> 2</span> <span class="n">markdown</span> <span class="o">=</span> <span class="no">Redcarpet</span><span class="o">.</span><span class="n">new</span><span class="p">(</span><span class="s2">&quot;Hello World!&quot;</span><span class="p">)</span>
 <span class="lineno"> 3</span> <span class="nb">puts</span> <span class="n">markdown</span><span class="o">.</span><span class="n">to_html</span>
 <span class="lineno"> 4</span> 
 <span class="lineno"> 5</span> <span class="k">def</span> <span class="nf">show</span>
-<span class="lineno"> 6</span>   <span class="nb">puts</span> <span class="s2">&quot;Outputting a very lo-o-o-o-o-o-o-o-o-o-o-o-o-o-o-o-ong lo-o-o-o-o-o-o-o-o-o-o-o-o-o-o-o-ong line&quot;</span>
+<span class="lineno"> 6</span>   <span class="nb">puts</span> <span class="s2">&quot;Outputting a very lo-o-o-o-o-o-o-o-o-o-o-o-ong lo-o-o-o-o-o-o-o-o-o-o-ong line&quot;</span>
 <span class="lineno"> 7</span>   <span class="vi">@widget</span> <span class="o">=</span> <span class="no">Widget</span><span class="p">(</span><span class="n">params</span><span class="o">[</span><span class="ss">:id</span><span class="o">]</span><span class="p">)</span>
 <span class="lineno"> 8</span>   <span class="n">respond_to</span> <span class="k">do</span> <span class="o">|</span><span class="nb">format</span><span class="o">|</span>
 <span class="lineno"> 9</span>     <span class="nb">format</span><span class="o">.</span><span class="n">html</span> <span class="c1"># show.html.erb</span>

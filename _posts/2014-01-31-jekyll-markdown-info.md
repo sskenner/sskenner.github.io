@@ -1,6 +1,6 @@
 ---
 layout: post
-title: markup with markdown*
+title: markup jekyll with markdown*
 ---
 
 {{ page.title }}
@@ -8,14 +8,12 @@ title: markup with markdown*
 
 <p class="meta">31 jan 2014</p>
 
-`::: markdown info :::`
+`::: my jekyll markdown cheatsheet :::`   _as per Adam Pritchards_ [Markdown Cheatsheet](https://github.com/adam-p/markdown-here/wiki/Markdown-Cheatsheet)
 
 **Markdown** is a way to write content for the web. It\'s written in what nerds like to call _plaintext_, which is exactly the sort of text we\'re used to writing and seeing.
 
 Here is a link to a very helpful interactive tutorial regarding: 
 [markdown interactive tut](http://markdowntutorial.com/)
-
-`::: my markdown cheatsheet :::`   _as per Adam Pritchards_ [Markdown Cheatsheet](https://github.com/adam-p/markdown-here/wiki/Markdown-Cheatsheet)
 
 <!-- why dont headers work? -->
 
@@ -50,18 +48,18 @@ Here is a link to a very helpful interactive tutorial regarding:
   * Unordered  
   `*` asterisks, `-` minuses & `+` pluses  
 
-  1. First ordered list item
-  2. Another item
-    * Unordered sub-list.
-  1. Actual numbers don\'t matter, just that it\'s a number
-    1. Ordered sub-list
-  4. And another item.
+    1. First ordered list item
+    2. Another item
+      * Unordered sub-list.
+    1. Any number will do
+      1. Ordered sub-list
+    4. And another item.
 
-    Some text that should be aligned with the above item.
+      Some text that should be aligned with the above item.
 
-  * Unordered list can use asterisks
-  - Or minuses
-  + Or pluses
+    * Unordered list can use asterisks
+    - Or minuses
+    + Or pluses
 
 
 * **Links**
@@ -105,28 +103,38 @@ Here is a link to a very helpful interactive tutorial regarding:
   Inline `code` has `back-ticks around` it.  
   <code>Inline `code` has `back-ticks` around it.</code>
   
-  * Syntax Highlighting
+<!-- START AQUIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIII-->
+<!-- START AQUIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIII-->
+
+* **Syntax Highlighting**
+
+    _note_: code snippet hightlighting seems to be blogging platform specific. For Jekyll,as per [Dmitri Moore\'s](https://github.com/demisx "demisx") blog post, entitled [Improve Code Highlighting in a Jekyll-based Blog Site](http://demisx.github.io/jekyll/2014/01/13/improve-code-highlighting-in-jekyll.html "Born-again Rubyist"), an option would be _via addition of custom CSS rules_. Can be done using the following steps:
+
+  * Add [syntax highlighter CSS file](https://github.com/mojombo/tpw/blob/master/css/syntax.css) as `css/syntax.css` to your Jekyll site  
+  * Load CSS `<link href="/css/syntax.css" rel="stylesheet">` inside of the corresponding layout file (e.g. _layouts/default.html) between the `<head>` tags  
+<!-- how to escape brackets -->
+
+  * Wrap code snippets in posts with `<left brace>% highlight ruby linenos %<right brace>...<left brace>% endhighlight %<right brace>` Liquid tags  
+
+  yields:
+
 <!-- why doesnt pretty line nums work? -->
 
-<!-- START AQUIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIII -->
-<!-- START AQUIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIII -->
-
-\{/\% highlight ruby linenos /\%\}
-
-{% highlight ruby linenos %}
+{% highlight ruby linenos %}  
 require 'redcarpet'
 markdown = Redcarpet.new("Hello World!")
 puts markdown.to_html
 
 def show
-  puts "Outputting a very lo-o-o-o-o-o-o-o-o-o-o-o-o-o-o-o-ong lo-o-o-o-o-o-o-o-o-o-o-o-o-o-o-o-ong line"
+  puts "Outputting a very lo-o-o-o-o-o-o-o-o-o-o-o-ong lo-o-o-o-o-o-o-o-o-o-o-ong line"
   @widget = Widget(params[:id])
   respond_to do |format|
     format.html # show.html.erb
     format.json { render json: @widget }
   end
 end
-{% endhighlight %}
+{% endhighlight %}  
+
 
 <!-- -->
 <!-- notes: -->
