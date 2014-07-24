@@ -1,5 +1,6 @@
 ---
 layout: post
+comments: true
 title: dev bootcamp = da ish*
 ---
 

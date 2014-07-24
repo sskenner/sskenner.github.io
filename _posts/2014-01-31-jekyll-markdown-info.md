@@ -1,5 +1,6 @@
 ---
 layout: post
+comments: true
 title: markup jekyll with markdown*
 ---
 
@@ -8,12 +9,9 @@ title: markup jekyll with markdown*
 
 <p class="meta">31 jan 2014</p>
 
-`::: my jekyll markdown cheatsheet :::`   _as per Adam Pritchards_ [Markdown Cheatsheet](https://github.com/adam-p/markdown-here/wiki/Markdown-Cheatsheet)
+`::: my jekyll markdown cheatsheet* :::`  
 
 **Markdown** is a way to write content for the web. It\'s written in what nerds like to call _plaintext_, which is exactly the sort of text we\'re used to writing and seeing.
-
-Here is a link to a very helpful interactive tutorial regarding: 
-[markdown interactive tut](http://markdowntutorial.com/)
 
 <!-- why dont headers work? -->
 
@@ -134,7 +132,14 @@ def show
   end
 end
 {% endhighlight %}  
+  
 
+
+Also, here is a link to a very helpful interactive tutorial regarding: 
+[markdown interactive tut](http://markdowntutorial.com/)
+
+\-\-\-  
+\*_extrapolated from Adam Pritchard\'s_ [Markdown Cheatsheet](https://github.com/adam-p/markdown-here/wiki/Markdown-Cheatsheet)  
 
 <!-- -->
 <!-- notes: -->
