@@ -41,12 +41,8 @@ var WRInitTime=(new Date()).getTime();
 
 <p><strong>Markdown</strong> is a way to write content for the web. It's written in what nerds like to call <em>plaintext</em>, which is exactly the sort of text we're used to writing and seeing.</p>
 
-<!-- why dont headers work? -->
-
 <ul>
-  <li>
-    <p><strong>Headers</strong></p>
-
+  <li><strong>Headers</strong>
     <ul>
       <li>Hashtags style<br />
 <code># H1</code> - <em>largest</em><br />
@@ -54,37 +50,25 @@ var WRInitTime=(new Date()).getTime();
 <code>### H3</code><br />
 <code>#### H4</code><br />
 <code>##### H5</code><br />
-<code>###### H6</code> - <em>smallest</em>    </li>
+<code>###### H6</code> - <em>smallest</em>  </li>
     </ul>
   </li>
-  <li>
-    <p><strong>Emphasis</strong></p>
-
+  <li><strong>Lists</strong>
     <ul>
-      <li>Emphasis, aka <em>italics</em>: <code>*asterisks*</code> or <code>_underscores_</code></li>
-      <li>Strong emphasis, aka <strong>bold</strong>: <code>**asterisks**</code> or <code>__underscores__</code></li>
-      <li>Combined emphasis with <strong><em>asterisks</em> and <em>underscores</em></strong>:<br />
-<code>**_asterisks_ and _underscores_**</code></li>
-    </ul>
-  </li>
-  <li>
-    <p><strong>Lists</strong></p>
-
-    <ul>
-      <li>
-        <p>Ordered<br />
-WYSIWYG<br />
-<code>1. First ordered list item</code><br />
-<code>2. Another item</code><br />
-<code>--* Unordered sub-list.</code><br />
-<code>1. Any number will do</code>  <br />
-<code>--1. Ordered sub-list</code><br />
-<code>4. And another item.</code></p>
+      <li><em>Code be like:</em>
+        <ul>
+          <li>Ordered<br />
+  <code>1. First ordered list item</code><br />
+  <code>2. Another item</code><br />
+  <code>--* Unordered sub-list.</code><br />
+  <code>1. Any number will do</code><br />
+  <code>--1. Ordered sub-list</code><br />
+  <code>4. And another item.</code></li>
+          <li>Unordered<br />
+<code>*</code> asterisks, <code>-</code> minuses &amp; <code>+</code> pluses  </li>
+        </ul>
       </li>
-      <li>
-        <p>Unordered<br />
-<code>*</code> asterisks, <code>-</code> minuses &amp; <code>+</code> pluses  </p>
-
+      <li><em>Looks like:</em>
         <ol>
           <li>First ordered list item</li>
           <li>Another item
@@ -107,36 +91,30 @@ WYSIWYG<br />
       </li>
     </ul>
   </li>
-  <li>
-    <p><strong>Links</strong></p>
-
+  <li><strong>Emphasis</strong>
     <ul>
-      <li>
-        <p><a href="http://sskenner.github.io">an inline-style link</a><br />
-<code>[an inline-style link](http://sskenner.github.io)</code></p>
-      </li>
-      <li>
-        <p><a href="https://www.google.com" title="Homepage">an inline-style link with title</a><br />
-<code>[an inline-style link with title](https://www.google.com "Homepage")</code></p>
-      </li>
-      <li>
-        <p><a href="https://google.com">a reference-style link</a><br />
+      <li>Emphasis, aka <em>italics</em>: <code>*asterisks*</code> or <code>_underscores_</code></li>
+      <li>Strong emphasis, aka <strong>bold</strong>: <code>**asterisks**</code> or <code>__underscores__</code></li>
+      <li>Combined emphasis with <strong><em>asterisks</em> and <em>underscores</em></strong>:<br />
+<code>**_asterisks_ and _underscores_**</code></li>
+    </ul>
+  </li>
+  <li><strong>Links</strong>
+    <ul>
+      <li><a href="http://sskenner.github.io">an inline-style link</a><br />
+<code>[an inline-style link](http://sskenner.github.io)</code></li>
+      <li><a href="https://www.google.com" title="Homepage">an inline-style link with title</a><br />
+<code>[an inline-style link with title](https://www.google.com "Homepage")</code></li>
+      <li><a href="https://google.com">a reference-style link</a><br />
 <code>[a reference-style link][Arbitrary case-insensitive reference text]</code><br />
-<code>[Arbitrary case-insensitive reference text]: https://google.com</code>  </p>
-      </li>
-      <li>
-        <p><a href="http://daringfireball.net/projects/markdown/syntax#link">can use numbers for reference-style link definitions</a><br />
-<code>[can use numbers for reference-style link definitions][1]</code></p>
-      </li>
-      <li>
-        <p>Or leave it empty and use the <a href="http://daringfireball.net/">link text itself</a><br />
+<code>[Arbitrary case-insensitive reference text]: https://google.com</code>  </li>
+      <li><a href="http://daringfireball.net/projects/markdown/syntax#link">can use numbers for reference-style link definitions</a><br />
+<code>[can use numbers for reference-style link definitions][1]</code></li>
+      <li>Or leave it empty and use the <a href="http://daringfireball.net/">link text itself</a><br />
 <code>[link text itself]</code><br />
-<code>[link text itself]: http://daringfireball.net/</code>  </p>
-      </li>
-      <li>
-        <p>text to show that the reference links can follow anywhere after reference-style number link<br />
-<code>[1]: http://daringfireball.net/projects/markdown/syntax#link</code>  </p>
-      </li>
+<code>[link text itself]: http://daringfireball.net/</code>  </li>
+      <li>text to show that the reference links can follow anywhere after reference-style number link<br />
+<code>[1]: http://daringfireball.net/projects/markdown/syntax#link</code>  </li>
     </ul>
   </li>
 </ul>
@@ -144,45 +122,28 @@ WYSIWYG<br />
 <ul>
   <li><strong>Images</strong>
     <ul>
-      <li>
-        <p>inline image:  (<em>hover over image to see title text</em>)<br />
-<code>![an inline images alt text](http://image.URL.com/image-name.jpg)</code><br />
-<img src="http://worldsoforos.com/secondviews/wp-content/uploads/2008/04/The-Matrix-Logo-150x150.gif" alt="alt text" title="maxtrix code map" />  </p>
-      </li>
-      <li>
-        <p>reference image:<br />
+      <li>inline image: (<em>hover over image to see title text</em>)<br />
+<code>![an inline images alt text](http://image.URL.com/image-name.jpg)</code>
+<img src="http://worldsoforos.com/secondviews/wp-content/uploads/2008/04/The-Matrix-Logo-150x150.gif" alt="alt text" title="maxtrix code map" /></li>
+      <li>reference image:<br />
 <code>![a reference images alt text][2]</code><br />
 <code>\n</code><br />
-<code>[2]: http://image.URL.com/image-name.jpg</code></p>
-      </li>
+<code>[2]: http://image.URL.com/image-name.jpg</code></li>
     </ul>
   </li>
-  <li><strong>Code and Syntax Highlighting</strong>  <br />
+  <li><strong>Code</strong>     <br />
     <ul>
-      <li>Code  <br />
-Inline <code>code</code> has <code>back-ticks around</code> it.<br />
+      <li>Inline <code>code</code> has <code>back-ticks around</code> it.<br />
 <code>Inline `code` has `back-ticks` around it.</code></li>
     </ul>
   </li>
-</ul>
-
-<!-- START AQUIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIII-->
-<!-- START AQUIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIII-->
-
-<ul>
-  <li>
-    <p><strong>Syntax Highlighting</strong></p>
-
-    <p><em>note</em>: code snippet hightlighting seems to be blogging platform specific. For Jekyll,as per <a href="https://github.com/demisx" title="demisx">Dmitri Moore's</a> blog post, entitled <a href="http://demisx.github.io/jekyll/2014/01/13/improve-code-highlighting-in-jekyll.html" title="Born-again Rubyist">Improve Code Highlighting in a Jekyll-based Blog Site</a>, an option would be <em>via addition of custom CSS rules</em>. Can be done using the following steps:</p>
-
-    <ul>
-      <li>Add <a href="https://github.com/mojombo/tpw/blob/master/css/syntax.css">syntax highlighter CSS file</a> as <code>css/syntax.css</code> to your Jekyll site  </li>
-      <li>
-        <p>Load CSS <code>&lt;link href="/css/syntax.css" rel="stylesheet"&gt;</code> inside of the corresponding layout file (e.g. _layouts/default.html) between the <code>&lt;head&gt;</code> tags<br />
-<!-- how to escape brackets --></p>
-      </li>
+  <li><strong>Syntax Highlighting</strong>  <em>&gt;&gt; note &gt;&gt;</em> it seems like code snippet hightlighting is  platform specific. For Jekyll, as per <a href="https://github.com/demisx" title="demisx">Dmitri Moore's</a> blog post entitled <a href="http://demisx.github.io/jekyll/2014/01/13/improve-code-highlighting-in-jekyll.html" title="Born-again Rubyist">Improve Code Highlighting in a Jekyll-based Blog Site</a>, an option would be <em>via addition of custom CSS rules</em> using the following steps:
+    <ol>
+      <li>Add <a href="https://github.com/mojombo/tpw/blob/master/css/syntax.css">syntax highlighter CSS file</a> as <code>css/syntax.css</code> to your Jekyll site</li>
+      <li>Load CSS <code>&lt;link href="/css/syntax.css" rel="stylesheet"&gt;</code> inside of the corresponding layout file (e.g. _layouts/default.html) between the <code>&lt;head&gt;</code> tags
+<!-- how to escape brackets???????????? --></li>
       <li>Wrap code snippets in posts with <code>&lt;left brace&gt;% highlight ruby linenos %&lt;right brace&gt;...&lt;left brace&gt;% endhighlight %&lt;right brace&gt;</code> Liquid tags  </li>
-    </ul>
+    </ol>
 
     <p>yields:</p>
   </li>
@@ -203,24 +164,143 @@ Inline <code>code</code> has <code>back-ticks around</code> it.<br />
 <span class="lineno">11</span>   <span class="k">end</span>
 <span class="lineno">12</span> <span class="k">end</span></code></pre></div>
 
+<ul>
+  <li>
+    <p><strong>Tables</strong>  </p>
+
+    <ul>
+      <li>Code be like:
+        <ul>
+          <li>
+            <p><code>First Header  | Second Header</code><br />
+<code>------------ | -------------</code><br />
+<code>Content Cell  | Content Cell</code><br />
+<code>Content Cell  | Content Cell</code>  </p>
+
+            <p><code>| Tables        | Are           | Cool  |</code><br />
+<code>| ------------- |:-------------:| -----:|</code><br />
+<code>| col 3 is      | right-aligned | $1600 |</code><br />
+<code>| col 2 is      | centered      |   $12 |</code><br />
+<code>| zebra stripes | are neat      |    $1 |</code>  </p>
+
+            <p><code>Markdown | Less | Pretty</code><br />
+<code>--- | --- | ---</code><br />
+<code>*Still* | </code><code>renders</code><code> | **nicely**</code><br />
+<code>1 | 2 | 3</code>  </p>
+          </li>
+        </ul>
+      </li>
+      <li>Looks like:<br />
+        <ul>
+          <li>
+            <table>
+              <thead>
+                <tr>
+                  <th>First Header</th>
+                  <th>Second Header</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>Content Cell</td>
+                  <td>Content Cell</td>
+                </tr>
+                <tr>
+                  <td>Content Cell</td>
+                  <td>Content Cell</td>
+                </tr>
+              </tbody>
+            </table>
+
+            <table>
+              <thead>
+                <tr>
+                  <th>Tables</th>
+                  <th style="text-align: center">Are</th>
+                  <th style="text-align: right">Cool</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>col 3 is</td>
+                  <td style="text-align: center">right-aligned</td>
+                  <td style="text-align: right">$1600</td>
+                </tr>
+                <tr>
+                  <td>col 2 is</td>
+                  <td style="text-align: center">centered</td>
+                  <td style="text-align: right">$12</td>
+                </tr>
+                <tr>
+                  <td>zebra stripes</td>
+                  <td style="text-align: center">are neat</td>
+                  <td style="text-align: right">$1</td>
+                </tr>
+              </tbody>
+            </table>
+
+            <table>
+              <thead>
+                <tr>
+                  <th>Markdown</th>
+                  <th>Less</th>
+                  <th>Pretty</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td><em>Still</em></td>
+                  <td><code>renders</code></td>
+                  <td><strong>nicely</strong></td>
+                </tr>
+                <tr>
+                  <td>1</td>
+                  <td>2</td>
+                  <td>3</td>
+                </tr>
+              </tbody>
+            </table>
+          </li>
+        </ul>
+      </li>
+    </ul>
+  </li>
+  <li>
+    <p><strong>Blockqoutes</strong>  </p>
+
+    <ul>
+      <li>
+        <blockquote>
+          <p>Lorizzle stuff fo shizzle sit dang, pot adipiscing fo shizzle. Fo shizzle sapizzle velit, owned volutpat, suscipizzle quis, gravida vizzle, arcu. Gangster izzle gangsta.</p>
+        </blockquote>
+
+        <blockquote>
+          <p>Lorizzle stuff fo shizzle sit dang, pot adipiscing fo shizzle.</p>
+        </blockquote>
+      </li>
+    </ul>
+  </li>
+</ul>
+
+<!-- START AQUIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIII -->
+<!-- info about screen.css entry -->
+<!-- START AQUIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIII -->
+
 <p>Also, here is a link to a very helpful interactive tutorial regarding: 
 <a href="http://markdowntutorial.com/">markdown interactive tut</a></p>
 
 <p>---<br />
-*<em>extrapolated from Adam Pritchard's</em> <a href="https://github.com/adam-p/markdown-here/wiki/Markdown-Cheatsheet">Markdown Cheatsheet</a>  </p>
+*<em>extrapolated from Adam Pritchard's</em> <a href="https://github.com/adam-p/markdown-here/wiki/Markdown-Cheatsheet">Markdown Cheatsheet</a> 
+<!-- http://sourceforge.net/p/jekyllc/bugs/markdown_syntax#md_ex_tables ?? --></p>
 
 <!-- -->
 <!-- notes: -->
 
-<!-- why doesnt block quote example work? -->
-<!-- 
-* **Blockqoutes**
-> Lorizzle stuff fo shizzle sit dang, pot adipiscing fo shizzle. Fo shizzle sapizzle velit, owned volutpat, suscipizzle quis, gravida vizzle, arcu. Gangster izzle gangsta.
-> Lorizzle stuff fo shizzle sit dang, pot adipiscing fo shizzle. Fo shizzle sapizzle velit, owned volutpat, suscipizzle quis, gravida vizzle, arcu. Gangster izzle gangsta.
--->
-
+<!-- include link to each gh code page -->
 <!-- why is it rendering w extra spaces? -->
 <!-- * Combined emphasis with **_asterisks_ and _underscores_**: `**_asterisks_ and _underscores_**` -->
+
+<!-- why dont headers work? -->
 
 <!-- * Strikethrough with ~~two tildes~~: `~~two tildes~~` ?? -->
 
@@ -250,7 +330,7 @@ Inline <code>code</code> has <code>back-ticks around</code> it.<br />
     <script type="text/javascript">
         /* * * CONFIGURATION VARIABLES: EDIT BEFORE PASTING INTO YOUR WEBPAGE * * */
         var disqus_shortname = 'sskennergithubio'; // required: replace example with your forum shortname
-        // var disqus_developer = 1; // TURNS DEV MODE ON .. REMOVE BEFORE PUSH TO GH ////////////////
+        var disqus_developer = 1; // TURNS DEV MODE ON .. REMOVE BEFORE PUSH TO GH ////////////////
         /* * * DON'T EDIT BELOW THIS LINE * * */
         (function() {
             var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
