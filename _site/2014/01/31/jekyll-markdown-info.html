@@ -156,20 +156,19 @@ var WRInitTime=(new Date()).getTime();
 <span class="lineno"> 3</span> <span class="nb">puts</span> <span class="n">markdown</span><span class="o">.</span><span class="n">to_html</span>
 <span class="lineno"> 4</span> 
 <span class="lineno"> 5</span> <span class="k">def</span> <span class="nf">show</span>
-<span class="lineno"> 6</span>   <span class="nb">puts</span> <span class="s2">&quot;Outputting a very lo-o-o-o-o-o-o-o-o-o-o-o-ong lo-o-o-o-o-o-o-o-o-o-o-ong line&quot;</span>
-<span class="lineno"> 7</span>   <span class="vi">@widget</span> <span class="o">=</span> <span class="no">Widget</span><span class="p">(</span><span class="n">params</span><span class="o">[</span><span class="ss">:id</span><span class="o">]</span><span class="p">)</span>
-<span class="lineno"> 8</span>   <span class="n">respond_to</span> <span class="k">do</span> <span class="o">|</span><span class="nb">format</span><span class="o">|</span>
-<span class="lineno"> 9</span>     <span class="nb">format</span><span class="o">.</span><span class="n">html</span> <span class="c1"># show.html.erb</span>
-<span class="lineno">10</span>     <span class="nb">format</span><span class="o">.</span><span class="n">json</span> <span class="p">{</span> <span class="n">render</span> <span class="ss">json</span><span class="p">:</span> <span class="vi">@widget</span> <span class="p">}</span>
-<span class="lineno">11</span>   <span class="k">end</span>
-<span class="lineno">12</span> <span class="k">end</span></code></pre></div>
+<span class="lineno"> 6</span>   <span class="nb">puts</span> <span class="s2">&quot;Outputting a very lo-o-o-o-o-o-o-o-o-o-o-o-ong lo-o-o-o-o-o-o-o-o-</span>
+<span class="lineno"> 7</span> <span class="s2">  o-o-ong line&quot;</span>
+<span class="lineno"> 8</span>   <span class="vi">@widget</span> <span class="o">=</span> <span class="no">Widget</span><span class="p">(</span><span class="n">params</span><span class="o">[</span><span class="ss">:id</span><span class="o">]</span><span class="p">)</span>
+<span class="lineno"> 9</span>   <span class="n">respond_to</span> <span class="k">do</span> <span class="o">|</span><span class="nb">format</span><span class="o">|</span>
+<span class="lineno">10</span>     <span class="nb">format</span><span class="o">.</span><span class="n">html</span> <span class="c1"># show.html.erb</span>
+<span class="lineno">11</span>     <span class="nb">format</span><span class="o">.</span><span class="n">json</span> <span class="p">{</span> <span class="n">render</span> <span class="ss">json</span><span class="p">:</span> <span class="vi">@widget</span> <span class="p">}</span>
+<span class="lineno">12</span>   <span class="k">end</span>
+<span class="lineno">13</span> <span class="k">end</span></code></pre></div>
 
 <ul>
-  <li>
-    <p><strong>Tables</strong>  </p>
-
+  <li><strong>Tables</strong>
     <ul>
-      <li>Code be like:
+      <li><em>Code be like:</em>
         <ul>
           <li>
             <p><code>First Header  | Second Header</code><br />
@@ -190,7 +189,7 @@ var WRInitTime=(new Date()).getTime();
           </li>
         </ul>
       </li>
-      <li>Looks like:<br />
+      <li><em>Looks like:</em><br />
         <ul>
           <li>
             <table>
@@ -265,14 +264,29 @@ var WRInitTime=(new Date()).getTime();
       </li>
     </ul>
   </li>
-  <li>
-    <p><strong>Blockqoutes</strong>  </p>
-
+  <li><strong>Blockqoutes</strong><br />
     <ul>
+      <li><em>Code be like:</em><br />
+        <ul>
+          <li>
+            <div class="highlight"><pre><code class="ruby"><span class="lineno">1</span> <span class="o">&gt;</span> <span class="no">Lorizzle</span> <span class="n">stuff</span> <span class="n">fo</span> <span class="n">shizzle</span> <span class="n">sit</span> <span class="n">dang</span><span class="p">,</span> <span class="n">pot</span> <span class="n">adipiscing</span> <span class="n">fo</span> <span class="n">shizzle</span><span class="o">.</span> 
+<span class="lineno">2</span>   <span class="no">Fo</span> <span class="n">shizzle</span> <span class="n">sapizzle</span> <span class="n">velit</span><span class="p">,</span> <span class="n">owned</span> <span class="n">volutpat</span><span class="p">,</span> <span class="n">suscipizzle</span> <span class="n">quis</span><span class="p">,</span> 
+<span class="lineno">3</span>   <span class="n">gravida</span> <span class="n">vizzle</span><span class="p">,</span> <span class="n">arcu</span><span class="o">.</span> <span class="no">Gangster</span> <span class="n">izzle</span> <span class="n">gangsta</span><span class="o">.</span>
+<span class="lineno">4</span> 
+<span class="lineno">5</span>   <span class="no">Quote</span> <span class="k">break</span><span class="o">.</span>
+<span class="lineno">6</span> 
+<span class="lineno">7</span>   <span class="o">&gt;</span> <span class="no">Lorizzle</span> <span class="n">stuff</span> <span class="n">fo</span> <span class="n">shizzle</span> <span class="n">sit</span> <span class="n">dang</span><span class="p">,</span> <span class="n">pot</span> <span class="n">adipiscing</span> <span class="n">fo</span> <span class="n">shizzle</span><span class="o">.</span></code></pre></div>
+          </li>
+        </ul>
+      </li>
       <li>
+        <p><em>Code renders like:</em></p>
+
         <blockquote>
           <p>Lorizzle stuff fo shizzle sit dang, pot adipiscing fo shizzle. Fo shizzle sapizzle velit, owned volutpat, suscipizzle quis, gravida vizzle, arcu. Gangster izzle gangsta.</p>
         </blockquote>
+
+        <p>Quote break.</p>
 
         <blockquote>
           <p>Lorizzle stuff fo shizzle sit dang, pot adipiscing fo shizzle.</p>
@@ -280,7 +294,50 @@ var WRInitTime=(new Date()).getTime();
       </li>
     </ul>
   </li>
+  <li><strong>Horizontal Rule</strong>
+    <ul>
+      <li><em>Code be like:</em><br />
+        <ul>
+          <li>
+            <div class="highlight"><pre><code class="ruby"><span class="lineno">1</span> <span class="o">---</span>
+<span class="lineno">2</span> <span class="no">Hyphens</span>
+<span class="lineno">3</span> <span class="o">***</span>
+<span class="lineno">4</span> <span class="no">Asteriks</span>
+<span class="lineno">5</span> <span class="n">___</span>
+<span class="lineno">6</span> 
+<span class="lineno">7</span> <span class="no">Undersscores</span></code></pre></div>
+          </li>
+        </ul>
+      </li>
+      <li>
+        <p><em>Code renders like:</em></p>
+
+        <hr />
+        <p>Undersscores</p>
+
+        <hr />
+        <p>Asteriks</p>
+
+        <hr />
+        <p>Undersscores</p>
+      </li>
+    </ul>
+  </li>
 </ul>
+
+<!--
+* **Inline HTML*
+  * _Code be like:_  
+  ```
+  <dl>  
+    <dt>Definition list</dt>
+    <dd>Is something people use sometimes.</dd>
+
+    <dt>Markdown in HTML</dt>
+    <dd>Does *not* work **very** well. Use HTML <em>tags</em>.</dd>
+  </dl>
+  ```
+-->
 
 <!-- START AQUIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIII -->
 <!-- info about screen.css entry -->

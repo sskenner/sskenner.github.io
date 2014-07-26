@@ -100,7 +100,8 @@ markdown = Redcarpet.new("Hello World!")
 puts markdown.to_html
 
 def show
-  puts "Outputting a very lo-o-o-o-o-o-o-o-o-o-o-o-ong lo-o-o-o-o-o-o-o-o-o-o-ong line"
+  puts "Outputting a very lo-o-o-o-o-o-o-o-o-o-o-o-ong lo-o-o-o-o-o-o-o-o-
+  o-o-ong line"
   @widget = Widget(params[:id])
   respond_to do |format|
     format.html # show.html.erb
@@ -109,9 +110,8 @@ def show
 end
 {% endhighlight %}  
 
-* **Tables**  
-
-  * Code be like:
+* **Tables**
+  * _Code be like:_
     * `First Header  | Second Header`  
       `------------ | -------------`  
       `Content Cell  | Content Cell`  
@@ -128,7 +128,7 @@ end
       `*Still* | ``renders`` | **nicely**`  
       `1 | 2 | 3`  
   
-  * Looks like:  
+  * _Looks like:_  
     * First Header  | Second Header
       ------------- | -------------
       Content Cell  | Content Cell
@@ -146,14 +146,51 @@ end
       1 | 2 | 3  
 
 * **Blockqoutes**  
+  * _Code be like:_  
+    * {% highlight ruby linenos %} 
+    > Lorizzle stuff fo shizzle sit dang, pot adipiscing fo shizzle. 
+  Fo shizzle sapizzle velit, owned volutpat, suscipizzle quis, 
+  gravida vizzle, arcu. Gangster izzle gangsta.
 
-  * > Lorizzle stuff fo shizzle sit dang, pot adipiscing fo shizzle. Fo shizzle sapizzle velit, owned volutpat, suscipizzle quis, gravida vizzle, arcu. Gangster izzle gangsta.
+  Quote break.
+
+  > Lorizzle stuff fo shizzle sit dang, pot adipiscing fo shizzle.
+      {% endhighlight %}  
+
+  * _Code renders like:_
+    
+    > Lorizzle stuff fo shizzle sit dang, pot adipiscing fo shizzle. Fo shizzle sapizzle velit, owned volutpat, suscipizzle quis, gravida vizzle, arcu. Gangster izzle gangsta.
+  
+    Quote break.
 
     > Lorizzle stuff fo shizzle sit dang, pot adipiscing fo shizzle.
 
+* **Horizontal Rule**
+  * _Code be like:_  
+    * {% highlight ruby linenos %} 
+    ---
+Hyphens
+***
+Asteriks
+___
+
+Undersscores
+      {% endhighlight %} 
+
+  * _Code renders like:_
+  
+      ---  
+      Hyphens
+        
+      ***
+      Asteriks
+      
+      ___  
+      Undersscores
+
 <!-- START AQUIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIII -->
 <!-- info about screen.css entry -->
-<!-- START AQUIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIII --> 
+<!-- START AQUIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIII -->
 
 Also, here is a link to a very helpful interactive tutorial regarding: 
 [markdown interactive tut](http://markdowntutorial.com/)
@@ -177,4 +214,18 @@ Also, here is a link to a very helpful interactive tutorial regarding:
   why doesnt the relative reference work?
   * [a relative reference to a repository file](../blob/master/_posts/2014-01-14-unix-fu.md)
   `[a relative reference to a repository file](../blob/master/_posts/2014-01-14-unix-fu.md)`
+-->
+
+<!--
+* **Inline HTML*
+  * _Code be like:_  
+  ```
+  <dl>  
+    <dt>Definition list</dt>
+    <dd>Is something people use sometimes.</dd>
+
+    <dt>Markdown in HTML</dt>
+    <dd>Does *not* work **very** well. Use HTML <em>tags</em>.</dd>
+  </dl>
+  ```
 -->
