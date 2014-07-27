@@ -33,7 +33,7 @@ var WRInitTime=(new Date()).getTime();
   </div>
   
   <div id="post">
-  <h1 id="markup-jekyll-with-markdown">markup jekyll with markdown*</h1>
+  <h2 id="markup-jekyll-with-markdown">markup jekyll with markdown*</h2>
 
 <p class="meta">31 jan 2014</p>
 
@@ -51,6 +51,14 @@ var WRInitTime=(new Date()).getTime();
 <code>#### H4</code><br />
 <code>##### H5</code><br />
 <code>###### H6</code> - <em>smallest</em>  </li>
+      <li><em>Code be like</em>
+        <h1>H1 - _largest_</h1>
+        <h2>H2</h2>
+        <h3>H3</h3>
+        <h4>H4</h4>
+        <h3>H5</h3>
+        <h6>H6 - _smallest_</h6>
+      </li>
     </ul>
   </li>
   <li><strong>Lists</strong>
@@ -103,8 +111,8 @@ var WRInitTime=(new Date()).getTime();
     <ul>
       <li><a href="http://sskenner.github.io">an inline-style link</a><br />
 <code>[an inline-style link](http://sskenner.github.io)</code></li>
-      <li><a href="https://www.google.com" title="Homepage">an inline-style link with title</a><br />
-<code>[an inline-style link with title](https://www.google.com "Homepage")</code></li>
+      <li><a href="https://www.google.com" title="Google">an inline-style link with title</a><br />
+<code>[an inline-style link with title](https://www.google.com "Google")</code></li>
       <li><a href="https://google.com">a reference-style link</a><br />
 <code>[a reference-style link][Arbitrary case-insensitive reference text]</code><br />
 <code>[Arbitrary case-insensitive reference text]: https://google.com</code>  </li>
@@ -142,30 +150,29 @@ var WRInitTime=(new Date()).getTime();
       <li>Add <a href="https://github.com/mojombo/tpw/blob/master/css/syntax.css">syntax highlighter CSS file</a> as <code>css/syntax.css</code> to your Jekyll site</li>
       <li>Load CSS <code>&lt;link href="/css/syntax.css" rel="stylesheet"&gt;</code> inside of the corresponding layout file (e.g. _layouts/default.html) between the <code>&lt;head&gt;</code> tags
 <!-- how to escape brackets???????????? --></li>
-      <li>Wrap code snippets in posts with <code>&lt;left brace&gt;% highlight ruby linenos %&lt;right brace&gt;...&lt;left brace&gt;% endhighlight %&lt;right brace&gt;</code> Liquid tags  </li>
-    </ol>
-
-    <p>yields:</p>
-  </li>
-</ul>
-
+      <li>Wrap code snippets in posts with <code>&lt;left brace&gt;% highlight ruby linenos %&lt;right brace&gt;...&lt;left brace&gt;% endhighlight %&lt;right brace&gt;</code> Liquid tags<br />
 <!-- why doesnt pretty line nums work? -->
-
-<div class="highlight"><pre><code class="ruby"><span class="lineno"> 1</span> <span class="nb">require</span> <span class="s1">&#39;redcarpet&#39;</span>
-<span class="lineno"> 2</span> <span class="n">markdown</span> <span class="o">=</span> <span class="no">Redcarpet</span><span class="o">.</span><span class="n">new</span><span class="p">(</span><span class="s2">&quot;Hello World!&quot;</span><span class="p">)</span>
-<span class="lineno"> 3</span> <span class="nb">puts</span> <span class="n">markdown</span><span class="o">.</span><span class="n">to_html</span>
-<span class="lineno"> 4</span> 
-<span class="lineno"> 5</span> <span class="k">def</span> <span class="nf">show</span>
-<span class="lineno"> 6</span>   <span class="nb">puts</span> <span class="s2">&quot;Outputting a very lo-o-o-o-o-o-o-o-o-o-o-o-ong lo-o-o-o-o-o-o-o-o-</span>
-<span class="lineno"> 7</span> <span class="s2">  o-o-ong line&quot;</span>
-<span class="lineno"> 8</span>   <span class="vi">@widget</span> <span class="o">=</span> <span class="no">Widget</span><span class="p">(</span><span class="n">params</span><span class="o">[</span><span class="ss">:id</span><span class="o">]</span><span class="p">)</span>
-<span class="lineno"> 9</span>   <span class="n">respond_to</span> <span class="k">do</span> <span class="o">|</span><span class="nb">format</span><span class="o">|</span>
-<span class="lineno">10</span>     <span class="nb">format</span><span class="o">.</span><span class="n">html</span> <span class="c1"># show.html.erb</span>
-<span class="lineno">11</span>     <span class="nb">format</span><span class="o">.</span><span class="n">json</span> <span class="p">{</span> <span class="n">render</span> <span class="ss">json</span><span class="p">:</span> <span class="vi">@widget</span> <span class="p">}</span>
-<span class="lineno">12</span>   <span class="k">end</span>
-<span class="lineno">13</span> <span class="k">end</span></code></pre></div>
-
-<ul>
+        <ul>
+          <li>
+            <div class="highlight"><pre><code class="ruby"><span class="lineno"> 1</span> <span class="nb">require</span> <span class="s1">&#39;redcarpet&#39;</span>
+<span class="lineno"> 2</span>     
+<span class="lineno"> 3</span> <span class="n">markdown</span> <span class="o">=</span> <span class="no">Redcarpet</span><span class="o">.</span><span class="n">new</span><span class="p">(</span><span class="s2">&quot;Hello World!&quot;</span><span class="p">)</span>
+<span class="lineno"> 4</span> <span class="nb">puts</span> <span class="n">markdown</span><span class="o">.</span><span class="n">to_html</span>
+<span class="lineno"> 5</span> 
+<span class="lineno"> 6</span> <span class="k">def</span> <span class="nf">show</span>
+<span class="lineno"> 7</span>   <span class="nb">puts</span> <span class="s2">&quot;Outputting a very lo-o-o-o-o-o-o-o-o-o-o-o-ong lo-</span>
+<span class="lineno"> 8</span> <span class="s2">  o-o-o-o-o-o-o-o-o-o-ong line&quot;</span>
+<span class="lineno"> 9</span>   <span class="vi">@widget</span> <span class="o">=</span> <span class="no">Widget</span><span class="p">(</span><span class="n">params</span><span class="o">[</span><span class="ss">:id</span><span class="o">]</span><span class="p">)</span>
+<span class="lineno">10</span>   <span class="n">respond_to</span> <span class="k">do</span> <span class="o">|</span><span class="nb">format</span><span class="o">|</span>
+<span class="lineno">11</span>     <span class="nb">format</span><span class="o">.</span><span class="n">html</span> <span class="c1"># show.html.erb</span>
+<span class="lineno">12</span>     <span class="nb">format</span><span class="o">.</span><span class="n">json</span> <span class="p">{</span> <span class="n">render</span> <span class="ss">json</span><span class="p">:</span> <span class="vi">@widget</span> <span class="p">}</span>
+<span class="lineno">13</span>   <span class="k">end</span>
+<span class="lineno">14</span> <span class="k">end</span></code></pre></div>
+          </li>
+        </ul>
+      </li>
+    </ol>
+  </li>
   <li><strong>Tables</strong>
     <ul>
       <li><em>Code be like:</em>
@@ -269,13 +276,13 @@ var WRInitTime=(new Date()).getTime();
       <li><em>Code be like:</em><br />
         <ul>
           <li>
-            <div class="highlight"><pre><code class="ruby"><span class="lineno">1</span> <span class="o">&gt;</span> <span class="no">Lorizzle</span> <span class="n">stuff</span> <span class="n">fo</span> <span class="n">shizzle</span> <span class="n">sit</span> <span class="n">dang</span><span class="p">,</span> <span class="n">pot</span> <span class="n">adipiscing</span> <span class="n">fo</span> <span class="n">shizzle</span><span class="o">.</span> 
-<span class="lineno">2</span>   <span class="no">Fo</span> <span class="n">shizzle</span> <span class="n">sapizzle</span> <span class="n">velit</span><span class="p">,</span> <span class="n">owned</span> <span class="n">volutpat</span><span class="p">,</span> <span class="n">suscipizzle</span> <span class="n">quis</span><span class="p">,</span> 
-<span class="lineno">3</span>   <span class="n">gravida</span> <span class="n">vizzle</span><span class="p">,</span> <span class="n">arcu</span><span class="o">.</span> <span class="no">Gangster</span> <span class="n">izzle</span> <span class="n">gangsta</span><span class="o">.</span>
+            <div class="highlight"><pre><code class="ruby"><span class="lineno">1</span> <span class="o">&gt;</span> <span class="no">Lorizzle</span> <span class="n">stuff</span> <span class="n">fo</span> <span class="n">shizzle</span> <span class="n">sit</span> <span class="n">dang</span><span class="p">,</span> <span class="n">pot</span> <span class="n">adipiscing</span> <span class="n">fo</span> 
+<span class="lineno">2</span>   <span class="n">shizzle</span><span class="o">.</span> <span class="no">Fo</span> <span class="n">shizzle</span> <span class="n">sapizzle</span> <span class="n">velit</span><span class="p">,</span> <span class="n">owned</span> <span class="n">volutpat</span><span class="p">,</span> 
+<span class="lineno">3</span>   <span class="n">quis</span><span class="p">,</span> <span class="n">gravida</span> <span class="n">vizzle</span><span class="p">,</span> <span class="n">arcu</span><span class="o">.</span> <span class="no">Gangster</span> <span class="n">izzle</span> <span class="n">gangsta</span><span class="o">.</span>
 <span class="lineno">4</span> 
 <span class="lineno">5</span>   <span class="no">Quote</span> <span class="k">break</span><span class="o">.</span>
 <span class="lineno">6</span> 
-<span class="lineno">7</span>   <span class="o">&gt;</span> <span class="no">Lorizzle</span> <span class="n">stuff</span> <span class="n">fo</span> <span class="n">shizzle</span> <span class="n">sit</span> <span class="n">dang</span><span class="p">,</span> <span class="n">pot</span> <span class="n">adipiscing</span> <span class="n">fo</span> <span class="n">shizzle</span><span class="o">.</span></code></pre></div>
+<span class="lineno">7</span>   <span class="o">&gt;</span> <span class="no">Lorizzle</span> <span class="n">stuff</span> <span class="n">fo</span> <span class="n">shizzle</span> <span class="n">sit</span> <span class="n">dang</span><span class="p">,</span> <span class="n">pot</span> <span class="n">adipiscing</span> <span class="n">fo</span><span class="o">.</span></code></pre></div>
           </li>
         </ul>
       </li>
@@ -283,7 +290,7 @@ var WRInitTime=(new Date()).getTime();
         <p><em>Code renders like:</em></p>
 
         <blockquote>
-          <p>Lorizzle stuff fo shizzle sit dang, pot adipiscing fo shizzle. Fo shizzle sapizzle velit, owned volutpat, suscipizzle quis, gravida vizzle, arcu. Gangster izzle gangsta.</p>
+          <p>Lorizzle stuff fo shizzle sit dang, pot adipiscing fo shizzle. Fo shizzle sapizzle velit, owned volutpat, quis, gravida vizzle, arcu. Gangster izzle gangsta.</p>
         </blockquote>
 
         <p>Quote break.</p>
@@ -304,8 +311,7 @@ var WRInitTime=(new Date()).getTime();
 <span class="lineno">3</span> <span class="o">***</span>
 <span class="lineno">4</span> <span class="no">Asteriks</span>
 <span class="lineno">5</span> <span class="n">___</span>
-<span class="lineno">6</span> 
-<span class="lineno">7</span> <span class="no">Undersscores</span></code></pre></div>
+<span class="lineno">6</span> <span class="no">Undersscores</span></code></pre></div>
           </li>
         </ul>
       </li>
@@ -313,7 +319,7 @@ var WRInitTime=(new Date()).getTime();
         <p><em>Code renders like:</em></p>
 
         <hr />
-        <p>Undersscores</p>
+        <p>Hyphens</p>
 
         <hr />
         <p>Asteriks</p>
@@ -324,20 +330,6 @@ var WRInitTime=(new Date()).getTime();
     </ul>
   </li>
 </ul>
-
-<!--
-* **Inline HTML*
-  * _Code be like:_  
-  ```
-  <dl>  
-    <dt>Definition list</dt>
-    <dd>Is something people use sometimes.</dd>
-
-    <dt>Markdown in HTML</dt>
-    <dd>Does *not* work **very** well. Use HTML <em>tags</em>.</dd>
-  </dl>
-  ```
--->
 
 <!-- START AQUIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIII -->
 <!-- info about screen.css entry -->
@@ -367,6 +359,20 @@ var WRInitTime=(new Date()).getTime();
   `[a relative reference to a repository file](../blob/master/_posts/2014-01-14-unix-fu.md)`
 -->
 
+<!--
+* **Inline HTML*
+  * _Code be like:_  
+  ```
+  <dl>  
+    <dt>Definition list</dt>
+    <dd>Is something people use sometimes.</dd>
+
+    <dt>Markdown in HTML</dt>
+    <dd>Does *not* work **very** well. Use HTML <em>tags</em>.</dd>
+  </dl>
+  ```
+-->
+
 </div>
 
 <div id="post-nav" class="clearfix">
@@ -379,7 +385,7 @@ var WRInitTime=(new Date()).getTime();
 </div>
 
 <div id="related">
-  <h1>Related Posts (TBD)</h1>
+  <h3>Related Posts (TBD)</h3>
   <ul class="posts">
     
       <li><span>29 Jun 2014</span> &raquo; <a href="/2014/06/29/dev-boot-camp.html">dev bootcamp = da ish*</a></li>

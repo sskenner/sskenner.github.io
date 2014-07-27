@@ -5,7 +5,7 @@ title: disqus ?? *
 ---
 
 {{ page.title }}
-================
+----------------
 
 <p class="meta">?? jun ????</p>
 

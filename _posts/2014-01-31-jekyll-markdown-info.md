@@ -5,7 +5,7 @@ title: markup jekyll with markdown*
 ---
 
 {{ page.title }}
-================
+----------------
 
 <p class="meta">31 jan 2014</p>
 
@@ -21,6 +21,13 @@ title: markup jekyll with markdown*
     `#### H4`  
     `##### H5`  
     `###### H6` - _smallest_  
+  * _Code be like_
+    <h1>H1 - _largest_</h1>  
+    <h2>H2</h2>  
+    <h3>H3</h3>  
+    <h4>H4</h4>  
+    <h3>H5</h3>  
+    <h6>H6 - _smallest_</h6>  
 * **Lists**
   * _Code be like:_
     * Ordered  
@@ -55,8 +62,8 @@ title: markup jekyll with markdown*
 * **Links**
   * [an inline-style link](http://sskenner.github.io)  
     `[an inline-style link](http://sskenner.github.io)`
-  * [an inline-style link with title](https://www.google.com "Homepage")  
-    `[an inline-style link with title](https://www.google.com "Homepage")`
+  * [an inline-style link with title](https://www.google.com "Google")  
+    `[an inline-style link with title](https://www.google.com "Google")`
   * [a reference-style link][Arbitrary case-insensitive reference text]  
     `[a reference-style link][Arbitrary case-insensitive reference text]`  
     `[Arbitrary case-insensitive reference text]: https://google.com`  
@@ -89,26 +96,23 @@ title: markup jekyll with markdown*
   2. Load CSS `<link href="/css/syntax.css" rel="stylesheet">` inside of the corresponding layout file (e.g. _layouts/default.html) between the `<head>` tags
 <!-- how to escape brackets???????????? -->
   3. Wrap code snippets in posts with `<left brace>% highlight ruby linenos %<right brace>...<left brace>% endhighlight %<right brace>` Liquid tags  
-
-  yields:
-
 <!-- why doesnt pretty line nums work? -->
-
-{% highlight ruby linenos %}  
-require 'redcarpet'
+  - {% highlight ruby linenos %}  
+    require 'redcarpet'
+    
 markdown = Redcarpet.new("Hello World!")
 puts markdown.to_html
 
 def show
-  puts "Outputting a very lo-o-o-o-o-o-o-o-o-o-o-o-ong lo-o-o-o-o-o-o-o-o-
-  o-o-ong line"
+  puts "Outputting a very lo-o-o-o-o-o-o-o-o-o-o-o-ong lo-
+  o-o-o-o-o-o-o-o-o-o-ong line"
   @widget = Widget(params[:id])
   respond_to do |format|
     format.html # show.html.erb
     format.json { render json: @widget }
   end
 end
-{% endhighlight %}  
+    {% endhighlight %}  
 
 * **Tables**
   * _Code be like:_
@@ -148,18 +152,18 @@ end
 * **Blockqoutes**  
   * _Code be like:_  
     * {% highlight ruby linenos %} 
-    > Lorizzle stuff fo shizzle sit dang, pot adipiscing fo shizzle. 
-  Fo shizzle sapizzle velit, owned volutpat, suscipizzle quis, 
-  gravida vizzle, arcu. Gangster izzle gangsta.
+    > Lorizzle stuff fo shizzle sit dang, pot adipiscing fo 
+  shizzle. Fo shizzle sapizzle velit, owned volutpat, 
+  quis, gravida vizzle, arcu. Gangster izzle gangsta.
 
   Quote break.
 
-  > Lorizzle stuff fo shizzle sit dang, pot adipiscing fo shizzle.
+  > Lorizzle stuff fo shizzle sit dang, pot adipiscing fo.
       {% endhighlight %}  
 
   * _Code renders like:_
     
-    > Lorizzle stuff fo shizzle sit dang, pot adipiscing fo shizzle. Fo shizzle sapizzle velit, owned volutpat, suscipizzle quis, gravida vizzle, arcu. Gangster izzle gangsta.
+    > Lorizzle stuff fo shizzle sit dang, pot adipiscing fo shizzle. Fo shizzle sapizzle velit, owned volutpat, quis, gravida vizzle, arcu. Gangster izzle gangsta.
   
     Quote break.
 
@@ -173,7 +177,6 @@ Hyphens
 ***
 Asteriks
 ___
-
 Undersscores
       {% endhighlight %} 
 
