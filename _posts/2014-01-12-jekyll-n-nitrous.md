@@ -1,7 +1,7 @@
 ---
 layout: post
 comments: true
-title: blog = jekyll & nitrous
+title: blog = jekyll & nitrous*
 ---
 
 {{ page.title }}
@@ -11,7 +11,7 @@ title: blog = jekyll & nitrous
 
 i am not a blogger .. _but_ .. i have made the decision to become a software developer .. _and_ .. it has come to my attention that the aforementioned blog .. _alot_ .. soooo .. when in rome ..
 
-after reviewing alot and trying a few blogging solutions, i have finally settled on what i consider to [rovide the most value. most, make posting about and with code snippets a chore. i came across [this blog post](http://juristr.com/blog/2013/05/blog-like-a-hacker-with-jekyll-and-nitrousio/ "Blog Like a Hacker with Jekyll and Nitrous.IO") suggests a "hacker friendly" solution using [Jekyll](http://jekyllrb.com/ "Jekyll") and [Nitrous.IO](https://www.nitrous.io/ "Nitrous"). i will attempt to chronicle my experiences regarding.
+after reviewing alot and trying a few blogging solutions, i have finally settled on what i consider to provide the most value and ease when posting about and with code snippets. i came across [this blog post](http://juristr.com/blog/2013/05/blog-like-a-hacker-with-jekyll-and-nitrousio/ "Blog Like a Hacker with Jekyll and Nitrous.IO") suggests a "hacker friendly" solution using [Jekyll](http://jekyllrb.com/ "Jekyll") and [Nitrous.IO](https://www.nitrous.io/ "Nitrous"). i will attempt to chronicle my experiences regarding.
 
 ![jedi](http://cdn-s3-2.wanelo.com/product/image/1811289/x354.jpg "jedi")
 
@@ -30,9 +30,6 @@ http://daringfireball.net/projects/markdown/basics
 
 >Start Blogging
 Now you can open the corresponding blog markdown file in the web IDE and start writing your blog post. You can even directly run Jekyll on Nitrous and preview the resulting posts in the browser while writing it.
-
-================
-why doesnt the default layout display for post
 
 <a href="http://www.youtube.com/watch?feature=player_embedded&v=BQ4yd2W50No
 " target="_blank"><img src="http://img.youtube.com/vi/BQ4yd2W50No/0.jpg" 
