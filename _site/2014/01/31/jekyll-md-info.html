@@ -9,7 +9,7 @@
   <link rel="stylesheet" href="/css/screen.css" type="text/css" media="screen, projection" />
   <link  rel="stylesheet" href="/css/syntax.css">
   
-  <title>markup jekyll with markdown*</title>
+  <title>markup jekyll with markdown</title>
   <meta name="author" content="c2" />
   
   <meta name="readability-verification" content="QCzSs992GxmRYRKVpPeZ6LE2tS8aYKxsSSQKV8YM" />
@@ -33,7 +33,7 @@ var WRInitTime=(new Date()).getTime();
   </div>
   
   <div id="post">
-  <h2 id="markup-jekyll-with-markdown">markup jekyll with markdown*</h2>
+  <h2 id="markup-jekyll-with-markdown">markup jekyll with markdown</h2>
 
 <p class="meta">31 jan 2014</p>
 
@@ -41,17 +41,18 @@ var WRInitTime=(new Date()).getTime();
 
 <p><strong>Markdown</strong> is a way to write content for the web. It's written in what nerds like to call <em>plaintext</em>, which is exactly the sort of text we're used to writing and seeing.</p>
 
+<hr />
 <ul>
   <li><strong>Headers</strong>
     <ul>
-      <li>Hashtags style<br />
+      <li>Hashtags style <em>code be like:</em><br />
 <code># H1</code> - <em>largest</em><br />
 <code>## H2</code><br />
 <code>### H3</code><br />
 <code>#### H4</code><br />
 <code>##### H5</code><br />
 <code>###### H6</code> - <em>smallest</em>  </li>
-      <li><em>Code be like</em>
+      <li><em>Code renders like:</em>
         <h1>H1 - _largest_</h1>
         <h2>H2</h2>
         <h3>H3</h3>
@@ -61,6 +62,10 @@ var WRInitTime=(new Date()).getTime();
       </li>
     </ul>
   </li>
+</ul>
+
+<hr />
+<ul>
   <li><strong>Lists</strong>
     <ul>
       <li><em>Code be like:</em>
@@ -99,6 +104,10 @@ var WRInitTime=(new Date()).getTime();
       </li>
     </ul>
   </li>
+</ul>
+
+<hr />
+<ul>
   <li><strong>Emphasis</strong>
     <ul>
       <li>Emphasis, aka <em>italics</em>: <code>*asterisks*</code> or <code>_underscores_</code></li>
@@ -107,6 +116,10 @@ var WRInitTime=(new Date()).getTime();
 <code>**_asterisks_ and _underscores_**</code></li>
     </ul>
   </li>
+</ul>
+
+<hr />
+<ul>
   <li><strong>Links</strong>
     <ul>
       <li><a href="http://sskenner.github.io">an inline-style link</a><br />
@@ -127,11 +140,12 @@ var WRInitTime=(new Date()).getTime();
   </li>
 </ul>
 
+<hr />
 <ul>
   <li><strong>Images</strong>
     <ul>
       <li>inline image: (<em>hover over image to see title text</em>)<br />
-<code>![an inline images alt text](http://image.URL.com/image-name.jpg)</code>
+<code>![an inline images alt text](http://image.URL.com/image-name.jpg)</code><br />
 <img src="http://worldsoforos.com/secondviews/wp-content/uploads/2008/04/The-Matrix-Logo-150x150.gif" alt="alt text" title="maxtrix code map" /></li>
       <li>reference image:<br />
 <code>![a reference images alt text][2]</code><br />
@@ -139,17 +153,26 @@ var WRInitTime=(new Date()).getTime();
 <code>[2]: http://image.URL.com/image-name.jpg</code></li>
     </ul>
   </li>
+</ul>
+
+<hr />
+<ul>
   <li><strong>Code</strong>     <br />
     <ul>
       <li>Inline <code>code</code> has <code>back-ticks around</code> it.<br />
 <code>Inline `code` has `back-ticks` around it.</code></li>
     </ul>
   </li>
-  <li><strong>Syntax Highlighting</strong>  <em>&gt;&gt; note &gt;&gt;</em> it seems like code snippet hightlighting is  platform specific. For Jekyll, as per <a href="https://github.com/demisx" title="demisx">Dmitri Moore's</a> blog post entitled <a href="http://demisx.github.io/jekyll/2014/01/13/improve-code-highlighting-in-jekyll.html" title="Born-again Rubyist">Improve Code Highlighting in a Jekyll-based Blog Site</a>, an option would be <em>via addition of custom CSS rules</em> using the following steps:
+</ul>
+
+<hr />
+<ul>
+  <li><strong>Syntax Highlighting</strong><br />
+<em>&gt;&gt; note &gt;&gt;</em> it seems like code snippet hightlighting is  platform specific. For Jekyll, as per <a href="https://github.com/demisx" title="demisx">Dmitri Moore's</a> blog post entitled <a href="http://demisx.github.io/jekyll/2014/01/13/improve-code-highlighting-in-jekyll.html" title="Born-again Rubyist">Improve Code Highlighting in a Jekyll-based Blog Site</a>, an option would be <em>via addition of custom CSS rules</em> using the following steps:
     <ol>
       <li>Add <a href="https://github.com/mojombo/tpw/blob/master/css/syntax.css">syntax highlighter CSS file</a> as <code>css/syntax.css</code> to your Jekyll site</li>
       <li>Load CSS <code>&lt;link href="/css/syntax.css" rel="stylesheet"&gt;</code> inside of the corresponding layout file (e.g. _layouts/default.html) between the <code>&lt;head&gt;</code> tags
-<!-- how to escape brackets???????????? --></li>
+<!-- ?????????????? how to escape brackets ???????????? --></li>
       <li>Wrap code snippets in posts with <code>&lt;left brace&gt;% highlight ruby linenos %&lt;right brace&gt;...&lt;left brace&gt;% endhighlight %&lt;right brace&gt;</code> Liquid tags<br />
 <!-- why doesnt pretty line nums work? -->
         <ul>
@@ -173,6 +196,10 @@ var WRInitTime=(new Date()).getTime();
       </li>
     </ol>
   </li>
+</ul>
+
+<hr />
+<ul>
   <li><strong>Tables</strong>
     <ul>
       <li><em>Code be like:</em>
@@ -230,17 +257,17 @@ var WRInitTime=(new Date()).getTime();
                 <tr>
                   <td>col 3 is</td>
                   <td style="text-align: center">right-aligned</td>
-                  <td style="text-align: right">$1600</td>
+                  <td style="text-align: right">stuff</td>
                 </tr>
                 <tr>
                   <td>col 2 is</td>
                   <td style="text-align: center">centered</td>
-                  <td style="text-align: right">$12</td>
+                  <td style="text-align: right">more stuff</td>
                 </tr>
                 <tr>
-                  <td>zebra stripes</td>
-                  <td style="text-align: center">are neat</td>
-                  <td style="text-align: right">$1</td>
+                  <td>col 1 is</td>
+                  <td style="text-align: center">left-aligned</td>
+                  <td style="text-align: right">less stuff</td>
                 </tr>
               </tbody>
             </table>
@@ -271,6 +298,10 @@ var WRInitTime=(new Date()).getTime();
       </li>
     </ul>
   </li>
+</ul>
+
+<hr />
+<ul>
   <li><strong>Blockqoutes</strong><br />
     <ul>
       <li><em>Code be like:</em><br />
@@ -301,6 +332,10 @@ var WRInitTime=(new Date()).getTime();
       </li>
     </ul>
   </li>
+</ul>
+
+<hr />
+<ul>
   <li><strong>Horizontal Rule</strong>
     <ul>
       <li><em>Code be like:</em><br />
@@ -331,25 +366,67 @@ var WRInitTime=(new Date()).getTime();
   </li>
 </ul>
 
-<!-- START AQUIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIII -->
-<!-- info about screen.css entry -->
-<!-- START AQUIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIII -->
+<hr />
+<ul>
+  <li><strong>Line Breaks</strong><br />
+    <ul>
+      <li><em>Code be like:</em>
+        <ul>
+          <li>
+            <div class="highlight"><pre><code class="ruby"><span class="lineno">1</span> <span class="no">This</span> <span class="n">is</span> <span class="n">the</span> <span class="n">first</span> <span class="n">line</span><span class="o">.</span>  
+<span class="lineno">2</span> 
+<span class="lineno">3</span> <span class="no">This</span> <span class="n">line</span> <span class="n">is</span> <span class="n">separated</span> <span class="n">from</span> <span class="n">the</span> <span class="n">one</span> <span class="n">above</span> <span class="n">by</span> <span class="n">two</span> <span class="n">newlines</span><span class="p">,</span> 
+<span class="lineno">4</span> <span class="n">so</span> <span class="n">it</span> <span class="n">will</span> <span class="n">be</span> <span class="n">a</span> <span class="o">*</span><span class="n">separate</span> <span class="n">paragraph</span><span class="o">*.</span>
+<span class="lineno">5</span> 
+<span class="lineno">6</span> <span class="no">This</span> <span class="n">line</span> <span class="n">is</span> <span class="n">also</span> <span class="n">a</span> <span class="n">separate</span> <span class="n">paragraph</span><span class="p">,</span> <span class="n">but</span><span class="o">.</span><span class="n">.</span><span class="o">.</span>
+<span class="lineno">7</span> <span class="no">This</span> <span class="n">line</span> <span class="n">is</span> <span class="n">only</span> <span class="n">separated</span> <span class="n">by</span> <span class="n">a</span> <span class="n">single</span> <span class="n">newline</span><span class="p">,</span> <span class="n">so</span> <span class="n">it</span> <span class="n">is</span> 
+<span class="lineno">8</span> <span class="n">a</span> <span class="n">separate</span> <span class="n">line</span> <span class="k">in</span> <span class="n">the</span> <span class="o">*</span><span class="n">same</span> <span class="n">paragraph</span><span class="o">*.</span></code></pre></div>
+          </li>
+        </ul>
+      </li>
+      <li>
+        <p><em>Code renders like:</em>  </p>
+
+        <p>This is the first line.</p>
+
+        <p>This line is separated from the one above by two newlines, so it will be a <em>separate paragraph</em>.</p>
+
+        <p>This line is also a separate paragraph, but...
+  This line is only separated by a single newline, so it is a separate line in the <em>same paragraph</em>.</p>
+      </li>
+    </ul>
+  </li>
+</ul>
+
+<hr />
+<ul>
+  <li><strong>Youtube videos</strong>
+    <ul>
+      <li><em>Code be like:</em></li>
+    </ul>
+  </li>
+</ul>
+
+<div class="highlight"><pre><code class="ruby"><span class="lineno">1</span> <span class="o">&lt;</span><span class="n">a</span> <span class="n">href</span><span class="o">=</span><span class="s2">&quot;http://www.youtube.com/watch?feature=player_embedded&amp;v=YOUTUBE_VIDEO_ID_HERE</span>
+<span class="lineno">2</span> <span class="s2">&quot;</span> <span class="n">target</span><span class="o">=</span><span class="s2">&quot;_blank&quot;</span><span class="o">&gt;&lt;</span><span class="n">img</span> <span class="n">src</span><span class="o">=</span><span class="s2">&quot;http://img.youtube.com/vi/YOUTUBE_VIDEO_ID_HERE/0.jpg&quot;</span> 
+<span class="lineno">3</span> <span class="n">alt</span><span class="o">=</span><span class="s2">&quot;IMAGE ALT TEXT HERE&quot;</span> <span class="n">width</span><span class="o">=</span><span class="s2">&quot;240&quot;</span> <span class="n">height</span><span class="o">=</span><span class="s2">&quot;180&quot;</span> <span class="n">border</span><span class="o">=</span><span class="s2">&quot;10&quot;</span> <span class="sr">/&gt;&lt;/</span><span class="n">a</span><span class="o">&gt;</span></code></pre></div>
+
+<hr />
 
 <p>Also, here is a link to a very helpful interactive tutorial regarding: 
 <a href="http://markdowntutorial.com/">markdown interactive tut</a></p>
 
 <p>---<br />
-*<em>extrapolated from Adam Pritchard's</em> <a href="https://github.com/adam-p/markdown-here/wiki/Markdown-Cheatsheet">Markdown Cheatsheet</a> 
+*<em>kinda extrapolated from Adam Pritchard's</em> <a href="https://github.com/adam-p/markdown-here/wiki/Markdown-Cheatsheet">Markdown Cheatsheet</a> 
 <!-- http://sourceforge.net/p/jekyllc/bugs/markdown_syntax#md_ex_tables ?? --></p>
 
-<!-- -->
-<!-- notes: -->
+<!-- ??????????????????????? issues below ??????????????????????? -->
+<!-- ??????????????????????? issues below ??????????????????????? -->
+<!-- ??????????????????????? issues below ??????????????????????? -->
 
 <!-- include link to each gh code page -->
-<!-- why is it rendering w extra spaces? -->
-<!-- * Combined emphasis with **_asterisks_ and _underscores_**: `**_asterisks_ and _underscores_**` -->
 
-<!-- why dont headers work? -->
+<!-- * Combined emphasis with **_asterisks_ and _underscores_**: `**_asterisks_ and _underscores_**` -->
 
 <!-- * Strikethrough with ~~two tildes~~: `~~two tildes~~` ?? -->
 
@@ -373,26 +450,29 @@ var WRInitTime=(new Date()).getTime();
   ```
 -->
 
+<!-- ?????????????? how to escape brackets ???????????? -->
+
 </div>
 
+---
 <div id="post-nav" class="clearfix">
+  
+    <a class="prev" href="/2014/01/14/unix-fu.html">&laquo; &laquo; unix fu et al &diams;</a>
    
-    <a class="prev" href="/2014/01/14/unix-fu.html">&laquo; unix fu et al</a> 
    
-   
-    <a class="next" href="/2014/06/29/dev-boot-camp.html">dev bootcamp = da ish* &raquo;</a> 
+    <a class="next" href="/2014/08/03/exercism-io.html">&diams; is exercism.io the truth? &raquo; &raquo;</a> 
    
 </div>
 
 <div id="related">
-  <h3>Related Posts (TBD)</h3>
+  <h4>related posts</h4>
   <ul class="posts">
     
-      <li><span>29 Jun 2014</span> &raquo; <a href="/2014/06/29/dev-boot-camp.html">dev bootcamp = da ish*</a></li>
+      <li><span>03 Aug 2014</span> &raquo; <a href="/2014/08/03/exercism-io.html">is exercism.io the truth?</a></li>
     
       <li><span>14 Jan 2014</span> &raquo; <a href="/2014/01/14/unix-fu.html">unix fu et al</a></li>
     
-      <li><span>11 Jan 2014</span> &raquo; <a href="/2014/01/11/strapped.html">strapped, locked, loaded</a></li>
+      <li><span>12 Jan 2014</span> &raquo; <a href="/2014/01/12/jekyll-n-nitrous.html">blog = jekyll & nitrous</a></li>
     
   </ul>
 </div>

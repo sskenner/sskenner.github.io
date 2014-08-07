@@ -5,17 +5,18 @@ layout: default
   {{ content }}
 </div>
 
+---
 <div id="post-nav" class="clearfix">
-  {% if page.previous.url %} 
-    <a class="prev" href="{{page.previous.url}}">&laquo; {{page.previous.title}}</a> 
+  {% if page.previous.url %}
+    <a class="prev" href="{{page.previous.url}}">&laquo; &laquo; {{page.previous.title}} &diams;</a>
   {% endif %} 
   {% if page.next.url %} 
-    <a class="next" href="{{page.next.url}}">{{page.next.title}} &raquo;</a> 
+    <a class="next" href="{{page.next.url}}">&diams; {{page.next.title}} &raquo; &raquo;</a> 
   {% endif %} 
 </div>
 
 <div id="related">
-  <h3>Related Posts (TBD)</h3>
+  <h4>related posts</h4>
   <ul class="posts">
     {% for post in site.related_posts limit:3 %}
       <li><span>{{ post.date | date_to_string }}</span> &raquo; <a href="{{ post.url }}">{{ post.title }}</a></li>
