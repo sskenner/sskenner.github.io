@@ -4,8 +4,7 @@ comments: true
 title: markup jekyll with markdown
 ---
 
-{{ page.title }}
-----------------
+<h3>{{ page.title }}</h3>
 
 <p class="meta">31 jan 2014</p>
 

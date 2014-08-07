@@ -4,8 +4,7 @@ comments: true
 title: is exercism.io the truth?
 ---
 
-{{ page.title }}
-----------------
+<h3>{{ page.title }}</h3>
 
 <p class="meta">03 aug 2014</p>
 
