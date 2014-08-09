@@ -6,7 +6,7 @@ title: markup jekyll with markdown
 
 <h3>{{ page.title }}</h3>
 
-<p class="meta">31 jan 2014</p>
+<p class="meta">26 jul 2014</p>
 
 `::: my jekyll markdown cheatsheet* :::`  
 
