@@ -8,6 +8,10 @@ title: web dev job checklist
 
 <p class="meta">09 aug 2014</p>
 
+<a href="http://www.youtube.com/watch?feature=player_embedded&v=Wf66LjGuoRw
+" target="_blank"><img src="http://img.youtube.com/vi/Wf66LjGuoRw/0.jpg" 
+alt="never 4 free" width="240" height="180" border="10" /></a>
+
 The following are some tasks and excerpts I am using as my guide to secure an opportunity as a Full Stack Ruby Web Developer. These insights are brought to you (via me) and made possible by Barry Clark\'s very (IMO) informative [blog](http://www.barryclark.co/).
 
 > Just seeing what kind of work people have done, and what sort of online artifacts they\'ve created, is tremendously helpful in getting a sense of what people do and what they\'re good (or bad) at. - Jeff Atwood, co-founder, Stack Exchange

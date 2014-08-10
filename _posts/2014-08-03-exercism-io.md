@@ -49,3 +49,7 @@ Contributing to Open Source Software can be very intimidating. It's scary to exp
 ---
   
 In the catch-22 scenario of needing experience to get a job as a dev and needing a job as a dev to get experience .. Is this service heaven sent? **TBD**
+
+<a href="http://www.youtube.com/watch?feature=player_embedded&v=UXoNE14U_zM
+" target="_blank"><img src="http://img.youtube.com/vi/UXoNE14U_zM/0.jpg" 
+alt="handle the truth" width="240" height="180" border="10" /></a>

@@ -23,7 +23,7 @@ _\"are public webpages freely hosted and easily published through\"_ GH. Here ar
 - [build a blog with Jekyll and GitHub pages](http://www.smashingmagazine.com/2014/08/01/build-blog-jekyll-github-pages/#more-197342)
 - [use Jekyll](http://jekyllrb.com/docs/home/)  
 
-Soooo \... due to the fact that I have spent the better part of the last year leveling-up my GH in terms of skills and content, am always connected to the effin internet via a different mobile device, and as Juri points out, use of the **Jekyll-Nitrous-GHPages** combo _\"reflects the kind of blogging experience you want as a dev, with Markdown support, full version control and amazing hosting\"_ \... This setup solves a potentially complicated and time-consuming problem for me.  
+Soooo \... due to the fact that I have spent the better part of the last 12 months leveling-up my GH in terms of skills and content, am always connected to the effin internet via a different mobile device, and as Juri points out, use of the **Jekyll-Nitrous-GHPages** combo _\"reflects the kind of blogging experience you want as a dev, with Markdown support, full version control and amazing hosting\"_ \... This setup solves a potentially complicated and time-consuming problem for me.  
 
 **Start Blogging**  
 
