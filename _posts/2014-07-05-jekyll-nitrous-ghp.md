@@ -8,9 +8,9 @@ title: jekyll+nitrous+GHPages = :)
 
 <p class="meta">05 jul 2014</p>
 
-> I am not a blogger .. _but_ .. I have made the decision to become a software developer .. _and_ .. it has come to my attention that the aforementioned blog .. _alot_ .. soooo .. when in Rome.
+> I am not a blogger .. _but_ .. I have made the decision to become a software developer .. _and_ .. it has come to my attention that the aforementioned blog .. _**alot**_ .. soooo .. when in Rome.
 
-After reviewing alot of and trying a few blogging solutions, I have finally settled on what I consider to provide the most value and ease when posting about and with code snippets. I came across [this blog post](http://juristr.com/blog/2013/05/blog-like-a-hacker-with-jekyll-and-nitrousio/ "Blog Like a Hacker with Jekyll and Nitrous.IO") suggests a \"hacker friendly\" solution using [Jekyll](http://jekyllrb.com/ "Jekyll") and [Nitrous.IO](https://www.nitrous.io/ "Nitrous"). I will attempt to chronicle my experiences regarding.
+After reviewing alot of and trying a few blogging solutions, I have finally settled on what I consider to provide the most value and ease when posting about and with code. I came across [this blog post](http://juristr.com/blog/2013/05/blog-like-a-hacker-with-jekyll-and-nitrousio/ "Blog Like a Hacker with Jekyll and Nitrous.IO") suggests a \"hacker friendly\" solution using [Jekyll](http://jekyllrb.com/ "Jekyll") and [Nitrous.IO](https://www.nitrous.io/ "Nitrous"). I will attempt to chronicle my experiences regarding.
 
 ![jedi](http://cdn-s3-2.wanelo.com/product/image/1811289/x354.jpg "jedi")
 

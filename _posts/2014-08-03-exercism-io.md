@@ -8,7 +8,7 @@ title: is exercism.io the truth?
 
 <p class="meta">03 aug 2014</p>
 
-As an aspiring sw dev with over a year and a half hardcore dev training and experience (as a web dev boot-camp teachers assistant), I am at the point where \...
+As an aspiring sw dev with over a year and a half of hardcore dev training and experience (as a web dev boot-camp teachers assistant), I am at the point where \...
 
 > _I want to:_
 
@@ -20,7 +20,11 @@ As an aspiring sw dev with over a year and a half hardcore dev training and expe
 
 > The solution .. one word .. [Exercism.io](http://exercism.io/) (at least in concept and theory). 
 
-The seemingly superwoman-ish semi Norwegian creator [Katrina Owen](http://www.kytrinyx.com/), describes it as a _\"place to engage in thoughtful conversations about code. Explore simplicity, idiomatic language features, and expressive readable code\"_. and guess what .. its open source!! repo found [here](https://github.com/exercism/exercism.io) .. pics of shorty found [here](https://www.google.com/search?q=Katrina+Owen&num=50&es_sm=122&tbm=isch&tbo=u&source=univ&sa=X&ei=Tf3dU4niK5a0yASmvIK4AQ&ved=0CDsQsAQ&biw=881&bih=925&dpr=0.75#imgdii=_).
+The seemingly superwoman-ish semi Norwegian creator [Katrina Owen](http://www.kytrinyx.com/), describes it as a
+
+>place to engage in thoughtful conversations about code. Explore simplicity, idiomatic language features, and expressive readable code. 
+
+.. and guess what .. its open source!! repo found [here](https://github.com/exercism/exercism.io) .. pics of shorty found [here](https://www.google.com/search?q=Katrina+Owen&num=50&es_sm=122&tbm=isch&tbo=u&source=univ&sa=X&ei=Tf3dU4niK5a0yASmvIK4AQ&ved=0CDsQsAQ&biw=881&bih=925&dpr=0.75#imgdii=_).
 
 <!--
 ![Katrina Owen](http://confoo.ca/images/speakers/2013/katrina-owen.jpg "this is Katrina Owen")

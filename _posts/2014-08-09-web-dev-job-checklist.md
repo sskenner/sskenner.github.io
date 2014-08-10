@@ -29,7 +29,7 @@ He then goes on to advise regarding the packaging of aforementioned footprint. O
 - as a bullet list in cover email
 - in the About page on personal site  
 
-He wraps ups his lessons with a directive to ..
+He wraps up his lesson with a directive to ..
 
 > take anything offline that wouldn\'t be aligned with the company culturally. This includes anything on your:
 
