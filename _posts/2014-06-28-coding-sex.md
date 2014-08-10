@@ -11,15 +11,15 @@ title: coding is like sex..
 > **_.. one mistake and you have to support it for the rest of your life._  
 ~ Michael Sinz**
 
-**Who:** me llamo santana.
+**Who:** me llamo _**santana**_.
 
-**What:** the misadventures of a full stack dev creating stuff with stuff to get stuff done.
+**What:** the misadventures of a _**full stack dev creating stuff with stuff to get stuff done**_.
 
-**When:** posted as often as I can, when I can.
+**When:** posted as _**often**_ as I can, when I can.
 
-**Where:** in a box, in a house, here or there and anywhere.
+**Where:** in a box, in a house, here or there and _**anywhere**_.
 
-**Why:** to assist hopefuls and mere mortals (_like myself_) bend spoons.
+**Why:** to assist hopefuls and mere mortals (_like myself_) _**bend spoons**_.
 
 <a href="http://www.youtube.com/watch?feature=player_embedded&v=7n5UBrTGdxo
 " target="_blank"><img src="http://img.youtube.com/vi/7n5UBrTGdxo/0.jpg" 

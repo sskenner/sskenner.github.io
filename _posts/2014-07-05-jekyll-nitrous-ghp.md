@@ -10,7 +10,7 @@ title: jekyll+nitrous+GHPages = :)
 
 > I am not a blogger .. _but_ .. I have made the decision to become a software developer .. _and_ .. it has come to my attention that the aforementioned blog .. _alot_ .. soooo .. when in Rome.
 
-After reviewing alot and trying a few blogging solutions, I have finally settled on what I consider to provide the most value and ease when posting about and with code snippets. I came across [this blog post](http://juristr.com/blog/2013/05/blog-like-a-hacker-with-jekyll-and-nitrousio/ "Blog Like a Hacker with Jekyll and Nitrous.IO") suggests a \"hacker friendly\" solution using [Jekyll](http://jekyllrb.com/ "Jekyll") and [Nitrous.IO](https://www.nitrous.io/ "Nitrous"). I will attempt to chronicle my experiences regarding.
+After reviewing alot of and trying a few blogging solutions, I have finally settled on what I consider to provide the most value and ease when posting about and with code snippets. I came across [this blog post](http://juristr.com/blog/2013/05/blog-like-a-hacker-with-jekyll-and-nitrousio/ "Blog Like a Hacker with Jekyll and Nitrous.IO") suggests a \"hacker friendly\" solution using [Jekyll](http://jekyllrb.com/ "Jekyll") and [Nitrous.IO](https://www.nitrous.io/ "Nitrous"). I will attempt to chronicle my experiences regarding.
 
 ![jedi](http://cdn-s3-2.wanelo.com/product/image/1811289/x354.jpg "jedi")
 
@@ -23,7 +23,7 @@ _\"are public webpages freely hosted and easily published through\"_ GH. Here ar
 - [build a blog with Jekyll and GitHub pages](http://www.smashingmagazine.com/2014/08/01/build-blog-jekyll-github-pages/#more-197342)
 - [use Jekyll](http://jekyllrb.com/docs/home/)  
 
-Soooo \... due to the fact that I have spent the better part of the last year leveling-up my GH in terms of skills and content, am always connectd to the effin internet via a different mobile device, and as Juri points out, use of the **Jekyll-Nitrous-GHPages** combo _\"reflects the kind of blogging experience you want as a dev, with Markdown support, full version control and amazing hosting\"_ \... This setup solves a potentially complicated and time-consuming problem for me.  
+Soooo \... due to the fact that I have spent the better part of the last year leveling-up my GH in terms of skills and content, am always connected to the effin internet via a different mobile device, and as Juri points out, use of the **Jekyll-Nitrous-GHPages** combo _\"reflects the kind of blogging experience you want as a dev, with Markdown support, full version control and amazing hosting\"_ \... This setup solves a potentially complicated and time-consuming problem for me.  
 
 **Start Blogging**  
 

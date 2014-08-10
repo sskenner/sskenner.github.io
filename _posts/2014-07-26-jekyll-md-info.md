@@ -10,7 +10,7 @@ title: markup jekyll with markdown
 
 `::: my jekyll markdown cheatsheet* :::`  
 
-**Markdown** is a way to write content for the web. It\'s written in what nerds like to call _plaintext_, which is exactly the sort of text we\'re used to writing and seeing.
+**Markdown** is a way to write content for the web. It\'s written in what devs like to call _plaintext_, which is exactly the sort of text we\'re used to writing and seeing.
 
 ---
 * **Headers**
