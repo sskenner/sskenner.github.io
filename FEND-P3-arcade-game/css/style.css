@@ -1,0 +1,17 @@
+body {
+  text-align: center;
+}
+
+#stats {
+  align: center;
+  height: 100px;
+  width: 1000px;
+}
+
+#right {
+  width: 500px
+}
+
+#left {
+  width: 500px;
+}
